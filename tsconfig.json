@@ -9,6 +9,6 @@
     "types": ["vite/client"],
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true
-  },
-  "include": ["src/components/form"]
+  }
+  // "include": ["src/components/form"]
 }
