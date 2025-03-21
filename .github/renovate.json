@@ -7,12 +7,7 @@
   "packageRules": [
     {
       "groupName": "React Ecosystem",
-      "matchPackageNames": [
-        "react",
-        "react-dom",
-        "@types/react",
-        "@types/react-dom"
-      ],
+      "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"],
       "automerge": false,
       "updateTypes": ["minor", "patch"]
     },
