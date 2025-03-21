@@ -1,0 +1,24 @@
+# Tratamento de arquivos de texto
+* text=auto eol=lf
+
+# Normaliza arquivos de configuração YAML e JSON
+*.yml text
+*.json text
+
+# Impede que arquivos binários sejam tratados como texto
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.mp4 binary
+*.mov binary
+*.pdf binary
+
+# Mantém arquivos de shell script no formato Unix
+*.sh text eol=lf
+
+# Garante que arquivos TypeScript e JavaScript tenham fim de linha LF
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
