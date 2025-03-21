@@ -3,10 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next dev",
+    "lint": "next lint",
+    "prepare": "husky",
+    "start": "next start"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,cjs}": [
+      "prettier --write"
+    ],
+    "*.{md,html,css,json,yml}": [
+      "prettier --write"
+    ],
+    "package.json": [
+      "pnpm sort-package-json"
+    ]
   },
   "dependencies": {
     "next": "15.2.3",
@@ -21,8 +33,11 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.2.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
+    "sort-package-json": "^3.0.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
