@@ -1,0 +1,57 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "labels": ["dependencies", "security"],
+  "assignees": [],
+
+  "packageRules": [
+    {
+      "groupName": "React Ecosystem",
+      "matchPackageNames": [
+        "react",
+        "react-dom",
+        "@types/react",
+        "@types/react-dom"
+      ],
+      "automerge": false,
+      "updateTypes": ["minor", "patch"]
+    },
+    {
+      "groupName": "Next.js Core",
+      "matchPackageNames": ["next", "@types/node"],
+      "automerge": false,
+      "updateTypes": ["minor", "patch"]
+    },
+    {
+      "groupName": "Tailwind CSS",
+      "matchPackageNames": ["tailwindcss", "@tailwindcss/postcss"],
+      "automerge": true,
+      "updateTypes": ["patch"]
+    },
+    {
+      "groupName": "Linting & Formatting",
+      "matchPackageNames": ["eslint", "eslint-config-next", "prettier"],
+      "automerge": true,
+      "updateTypes": ["patch"]
+    },
+    {
+      "groupName": "Testing & Dev Tools",
+      "matchPackagePatterns": ["jest", "vitest", "testing-library", "cypress"],
+      "updateTypes": ["minor", "patch"],
+      "automerge": false
+    }
+  ],
+
+  "ignoreDeps": ["webpack"],
+  "allowedPostUpgradeCommands": ["pnpm audit"],
+  "prHourlyLimit": 2,
+  "prConcurrentLimit": 5,
+  "requireConfig": "required",
+  "separateMinorPatch": true,
+  "schedule": ["after 9am and before 6pm on weekdays"],
+  "dependencyDashboard": true,
+  "securityUpdates": {
+    "enabled": true,
+    "automerge": false
+  }
+}
