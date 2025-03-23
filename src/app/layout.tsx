@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Merriweather, Source_Code_Pro } from 'next/font/google';
 import './globals.css';
+import Home from './page';
 
 const merryWeather = Merriweather({
   subsets: ['latin'],
@@ -25,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${merryWeather.className} ${sourceCodePro.className} antialiased`}>
+      <body className={`${merryWeather.className} ${sourceCodePro.className} bg-snow antialiased`}>
         {children}
       </body>
     </html>

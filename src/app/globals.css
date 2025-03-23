@@ -20,3 +20,13 @@ li,
 a {
   font-family: var(--font-text);
 }
+
+@theme {
+  --color-snow: #f4f1ec;
+  --color-yellow: #fdf156;
+  --color-orange: #fdaf15;
+  --color-green: #02c877;
+  --color-chocolate: #884a3b;
+  --color-light-chocolate: #d47b65;
+  --color-dark: #111827;
+}
