@@ -102,15 +102,15 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
           </a>
         </div>
       </div>
-      <a href="#support" className="text-gray-700 hover:text-black">
+      <a href="#support" className="text-dark hover:text-black">
         Como Apoiar
       </a>
-      <a href="#contact" className="text-gray-700 hover:text-black">
+      <a href="#contact" className="text-dark hover:text-black">
         Contato
       </a>
       <a
         href="#donate"
-        className="flex items-center justify-center rounded px-4 py-2 text-white hover:bg-gray-800"
+        className="hover:bg-text-dark flex items-center justify-center rounded px-4 py-2 text-white"
       >
         <img src="/donation-icon-line-black.svg" alt="Doação" className="h-6 w-6" />
       </a>
