@@ -21,6 +21,13 @@ a {
   font-family: var(--font-text);
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-text, sans-serif);
+  background-color: var(--bg-snow, #ffffff); /* Exemplo de fallback */
+}
+
 @theme {
   --color-snow: #f4f1ec;
   --color-yellow: #fdf156;
