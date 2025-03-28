@@ -89,9 +89,14 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
       </a>
       <a
         href="#donate"
-        className="flex items-center justify-center rounded bg-black px-4 py-2 text-white hover:bg-gray-800"
+        className="flex items-center justify-center rounded px-4 py-2 text-white hover:bg-gray-800"
       >
-        <img src="/donation-icon-line-black.svg" alt="Doação" className="h-6 w-6" />
+        <a
+          href="#_"
+          className="ease bg-green w-full rounded-full px-9 py-4 text-center text-xl text-white transition-colors duration-300 hover:bg-green-500 md:w-auto"
+        >
+          Quero Doar!
+        </a>
       </a>
     </div>
   );
