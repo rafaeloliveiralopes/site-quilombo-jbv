@@ -12,6 +12,7 @@ const merryWeather = Merriweather({
 const sourceCodePro = Source_Code_Pro({
   subsets: ['latin'],
   weight: ['200', '300', '400'],
+  variable: '--font-text',
 });
 
 export const metadata: Metadata = {

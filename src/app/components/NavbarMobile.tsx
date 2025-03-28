@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface NavbarMobileProps {
   isSubMenuOpen: boolean;
@@ -17,9 +18,21 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
 }) => {
   return (
     <div
-      className="bg-snow absolute top-0 left-0 z-50 w-full space-y-2 p-4 shadow-lg"
+      className="bg-light-chocolate absolute top-0 left-0 z-50 w-full space-y-4 p-16 pt-8 text-3xl font-[300] shadow-lg"
       style={{ height: '100vh' }}
     >
+      {/* Logo da associação */}
+      <div className="flex justify-center">
+        <Image
+          src="/logo-associacao-quilombola-joao-borges-vieira.png"
+          alt="Logo da Associação"
+          width={96}
+          height={96}
+          className="h-24 w-auto"
+          priority
+        />
+      </div>
+
       {/* Botão de fechar */}
       <button
         type="button"
@@ -118,14 +131,10 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
       </a>
       <a
         href="#donate"
-        className="flex items-center justify-center rounded px-4 py-2 text-white hover:bg-gray-800"
+        className="bg-green mt-8 flex w-full items-center justify-center rounded-full py-4 text-2xl font-[400] text-white transition-colors duration-300 hover:bg-green-500"
+        aria-label="Quero Doar"
       >
-        <a
-          href="#_"
-          className="ease bg-green w-full rounded-full px-9 py-4 text-center text-xl text-white transition-colors duration-300 hover:bg-green-500 md:w-auto"
-        >
-          Quero Doar!
-        </a>
+        Quero Doar!
       </a>
     </div>
   );
