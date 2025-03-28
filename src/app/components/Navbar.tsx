@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
               alt="Logo"
               width={96}
               height={96}
-              className="h-24 w-auto"
+              style={{ width: 'auto', height: 'auto' }}
               priority
             />
           </div>
