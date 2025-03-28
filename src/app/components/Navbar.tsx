@@ -64,6 +64,7 @@ const Navbar: React.FC = () => {
             setIsSubMenuOpen={setIsSubMenuOpen}
             isAcervoSubMenuOpen={isAcervoSubMenuOpen}
             setIsAcervoSubMenuOpen={setIsAcervoSubMenuOpen}
+            setIsMenuOpen={setIsMenuOpen}
           />
         )}
       </div>
