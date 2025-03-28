@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Merriweather, Source_Code_Pro } from 'next/font/google';
 import './globals.css';
-import Home from './page';
+import Navbar from './components/Navbar';
 
 const merryWeather = Merriweather({
   subsets: ['latin'],
@@ -27,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${merryWeather.className} ${sourceCodePro.className} bg-snow antialiased`}>
+        <Navbar />
         <main className="mx-auto w-full flex-1">{children}</main>
       </body>
     </html>
