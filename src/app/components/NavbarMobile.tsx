@@ -15,13 +15,13 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
 }) => {
   return (
     <div className="space-y-2">
-      <a href="#home" className="block text-gray-700 hover:text-black">
+      <a href="#home" className="text-dark block hover:text-black">
         Home
       </a>
       <div>
         <button
           type="button"
-          className="flex w-full items-center justify-between text-left text-gray-700 hover:text-black focus:outline-none"
+          className="text-dark flex w-full items-center justify-between text-left hover:text-black focus:outline-none"
           onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}
         >
           Sobre Nós
@@ -39,13 +39,13 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
         </button>
         {isSubMenuOpen && (
           <div className="ml-4 space-y-2">
-            <a href="#our-history" className="block text-gray-700 hover:text-black">
+            <a href="#our-history" className="text-dark block hover:text-black">
               Nossa História
             </a>
-            <a href="#our-work" className="block text-gray-700 hover:text-black">
+            <a href="#our-work" className="text-dark block hover:text-black">
               Nosso Trabalho
             </a>
-            <a href="#our-team" className="block text-gray-700 hover:text-black">
+            <a href="#our-team" className="text-dark block hover:text-black">
               Nossa Equipe
             </a>
           </div>
@@ -54,7 +54,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
       <div>
         <button
           type="button"
-          className="flex w-full items-center justify-between text-left text-gray-700 hover:text-black focus:outline-none"
+          className="text-dark flex w-full items-center justify-between text-left hover:text-black focus:outline-none"
           onClick={() => setIsAcervoSubMenuOpen(!isAcervoSubMenuOpen)}
         >
           Acervo
@@ -72,24 +72,24 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
         </button>
         {isAcervoSubMenuOpen && (
           <div className="ml-4 space-y-2">
-            <a href="#gallery" className="block text-gray-700 hover:text-black">
+            <a href="#gallery" className="text-dark block hover:text-black">
               Galeria de Imagens
             </a>
-            <a href="#videos" className="block text-gray-700 hover:text-black">
+            <a href="#videos" className="text-dark block hover:text-black">
               Vídeos
             </a>
           </div>
         )}
       </div>
-      <a href="#support" className="block text-gray-700 hover:text-black">
+      <a href="#support" className="text-dark block hover:text-black">
         Como Apoiar
       </a>
-      <a href="#contact" className="block text-gray-700 hover:text-black">
+      <a href="#contact" className="text-dark block hover:text-black">
         Contato
       </a>
       <a
         href="#donate"
-        className="block flex items-center justify-center rounded bg-black px-4 py-2 text-white hover:bg-gray-800"
+        className="flex items-center justify-center rounded bg-black px-4 py-2 text-white hover:bg-gray-800"
       >
         <img src="/donation-icon-line-black.svg" alt="Doação" className="h-6 w-6" />
       </a>
