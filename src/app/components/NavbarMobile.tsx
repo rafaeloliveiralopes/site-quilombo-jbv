@@ -6,7 +6,7 @@ interface NavbarMobileProps {
   setIsSubMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
   isAcervoSubMenuOpen: boolean;
   setIsAcervoSubMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>; // Adicionado para controlar o estado do menu
+  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const NavbarMobile: React.FC<NavbarMobileProps> = ({
@@ -16,13 +16,27 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
   setIsAcervoSubMenuOpen,
   setIsMenuOpen,
 }) => {
+  const handleSubMenuToggle = () => {
+    setIsSubMenuOpen((prev) => {
+      if (!prev) setIsAcervoSubMenuOpen(false);
+      return !prev;
+    });
+  };
+
+  const handleAcervoSubMenuToggle = () => {
+    setIsAcervoSubMenuOpen((prev) => {
+      if (!prev) setIsSubMenuOpen(false);
+      return !prev;
+    });
+  };
+
   return (
     <div
-      className="bg-light-chocolate absolute top-0 left-0 z-50 w-full space-y-4 p-16 pt-8 text-3xl font-[300] shadow-lg"
+      className="bg-light-chocolate absolute top-0 left-0 z-50 w-full space-y-4 p-16 pt-8 text-3xl font-[300] shadow-lg max-[740px]:pt-16 max-[600px]:text-2xl"
       style={{ height: '100vh' }}
     >
       {/* Logo da associação */}
-      <div className="flex justify-center">
+      <div className="flex justify-center max-[640px]:pb-8">
         <Image
           src="/logo-associacao-quilombola-joao-borges-vieira.png"
           alt="Logo da Associação"
@@ -36,9 +50,9 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
       {/* Botão de fechar */}
       <button
         type="button"
-        className="absolute top-4 right-4 text-gray-700 hover:text-black focus:outline-none"
+        className="absolute top-4 right-4 text-gray-700 focus:ring-2 focus:ring-gray-300 focus:outline-none active:text-black"
         aria-label="Close menu"
-        onClick={() => setIsMenuOpen(false)} // Fecha o menu ao clicar
+        onClick={() => setIsMenuOpen(false)}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -57,14 +71,17 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
       </button>
 
       {/* Links do menu */}
-      <a href="#home" className="text-dark block hover:text-black">
+      <a
+        href="#home"
+        className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
+      >
         Home
       </a>
       <div>
         <button
           type="button"
-          className="text-dark flex w-full items-center justify-between text-left hover:text-black focus:outline-none"
-          onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}
+          className="text-dark flex w-full items-center justify-between text-left transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
+          onClick={handleSubMenuToggle}
         >
           Sobre Nós
           <svg
@@ -81,13 +98,22 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
         </button>
         {isSubMenuOpen && (
           <div className="ml-4 space-y-2">
-            <a href="#our-history" className="text-dark block hover:text-black">
+            <a
+              href="#our-history"
+              className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
+            >
               Nossa História
             </a>
-            <a href="#our-work" className="text-dark block hover:text-black">
+            <a
+              href="#our-work"
+              className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
+            >
               Nosso Trabalho
             </a>
-            <a href="#our-team" className="text-dark block hover:text-black">
+            <a
+              href="#our-team"
+              className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
+            >
               Nossa Equipe
             </a>
           </div>
@@ -96,8 +122,8 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
       <div>
         <button
           type="button"
-          className="text-dark flex w-full items-center justify-between text-left hover:text-black focus:outline-none"
-          onClick={() => setIsAcervoSubMenuOpen(!isAcervoSubMenuOpen)}
+          className="text-dark flex w-full items-center justify-between text-left transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
+          onClick={handleAcervoSubMenuToggle}
         >
           Acervo
           <svg
@@ -114,24 +140,36 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
         </button>
         {isAcervoSubMenuOpen && (
           <div className="ml-4 space-y-2">
-            <a href="#gallery" className="text-dark block hover:text-black">
+            <a
+              href="#gallery"
+              className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
+            >
               Galeria de Imagens
             </a>
-            <a href="#videos" className="text-dark block hover:text-black">
+            <a
+              href="#videos"
+              className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
+            >
               Vídeos
             </a>
           </div>
         )}
       </div>
-      <a href="#support" className="text-dark block hover:text-black">
+      <a
+        href="#support"
+        className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
+      >
         Como Apoiar
       </a>
-      <a href="#contact" className="text-dark block hover:text-black">
+      <a
+        href="#contact"
+        className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
+      >
         Contato
       </a>
       <a
         href="#donate"
-        className="bg-green mt-8 flex w-full items-center justify-center rounded-full py-4 text-2xl font-[400] text-white transition-colors duration-300 hover:bg-green-500"
+        className="bg-green mt-8 flex w-full items-center justify-center rounded-full py-4 text-2xl font-[400] text-white transition-all duration-300 focus:outline-none active:scale-105 active:bg-green-600"
         aria-label="Quero Doar"
       >
         Quero Doar!
