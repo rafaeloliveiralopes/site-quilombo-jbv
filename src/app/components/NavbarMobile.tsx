@@ -86,7 +86,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
           Sobre Nós
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className={`ml-2 h-4 w-4 transform transition-transform ${
+            className={`mr-[3rem] h-4 w-4 transform transition-transform ${
               isSubMenuOpen ? 'rotate-180' : 'rotate-0'
             }`}
             fill="none"
@@ -128,7 +128,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
           Acervo
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className={`ml-2 h-4 w-4 transform transition-transform ${
+            className={`mr-[5rem] h-4 w-4 transform transition-transform ${
               isAcervoSubMenuOpen ? 'rotate-180' : 'rotate-0'
             }`}
             fill="none"
