@@ -15,7 +15,7 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
 }) => {
   return (
     <div className="hidden space-x-6 md:flex xl:text-2xl">
-      <a href="#home" className="text-dark hover:text-black">
+      <a href="#home" className="text-dark hover:text-light-chocolate">
         Home
       </a>
       <div
@@ -25,7 +25,7 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
       >
         <button
           type="button"
-          className="text-dark flex items-center hover:text-black focus:outline-none"
+          className="text-dark hover:text-light-chocolate flex items-center focus:outline-none"
         >
           Sobre Nós
           <svg
@@ -73,7 +73,7 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
       >
         <button
           type="button"
-          className="text-dark flex items-center hover:text-black focus:outline-none"
+          className="text-dark hover:text-light-chocolate flex items-center focus:outline-none"
         >
           Acervo
           <svg
@@ -108,10 +108,10 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
           </a>
         </div>
       </div>
-      <a href="#support" className="text-dark hover:text-black">
+      <a href="#support" className="text-dark hover:text-light-chocolate">
         Como Apoiar
       </a>
-      <a href="#contact" className="text-dark hover:text-black">
+      <a href="#contact" className="text-dark hover:text-light-chocolate">
         Contato
       </a>
       <a
