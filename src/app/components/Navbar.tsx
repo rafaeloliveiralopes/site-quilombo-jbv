@@ -18,8 +18,8 @@ const Navbar: React.FC = () => {
             <Image
               src="/logo-associacao-quilombola-joao-borges-vieira.png"
               alt="Logo"
-              width={96}
-              height={96}
+              width={65}
+              height={65}
               style={{ width: 'auto', height: 'auto' }}
               priority
             />
