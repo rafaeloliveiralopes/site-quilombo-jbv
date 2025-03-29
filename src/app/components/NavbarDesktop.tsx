@@ -14,7 +14,7 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
   setIsAcervoSubMenuOpen,
 }) => {
   return (
-    <div className="hidden space-x-6 md:flex xl:text-3xl">
+    <div className="hidden space-x-6 md:flex xl:text-2xl">
       <a href="#home" className="text-dark hover:text-black">
         Home
       </a>
