@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
+
 interface NavbarDesktopProps {
   isSubMenuOpen: boolean;
   setIsSubMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -13,6 +14,22 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
   isAcervoSubMenuOpen,
   setIsAcervoSubMenuOpen,
 }) => {
+  const [submenuTimer, setSubmenuTimer] = useState<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = (setOpen: React.Dispatch<React.SetStateAction<boolean>>) => {
+    if (submenuTimer) {
+      clearTimeout(submenuTimer); // Limpa o timer se o mouse entrar novamente antes do atraso
+    }
+    setOpen(true);
+  };
+
+  const handleMouseLeave = (setOpen: React.Dispatch<React.SetStateAction<boolean>>) => {
+    const timer = setTimeout(() => {
+      setOpen(false); // Fecha o submenu após o atraso
+    }, 400); // Atraso de 400ms
+    setSubmenuTimer(timer);
+  };
+
   return (
     <div className="hidden items-center space-x-6 md:flex xl:text-2xl">
       <a href="#home" className="text-dark hover:text-light-chocolate">
@@ -20,8 +37,8 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
       </a>
       <div
         className="group relative"
-        onMouseEnter={() => setIsSubMenuOpen(true)}
-        onMouseLeave={() => setIsSubMenuOpen(false)}
+        onMouseEnter={() => handleMouseEnter(setIsSubMenuOpen)}
+        onMouseLeave={() => handleMouseLeave(setIsSubMenuOpen)}
       >
         <button
           type="button"
@@ -68,8 +85,8 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
       </div>
       <div
         className="group relative"
-        onMouseEnter={() => setIsAcervoSubMenuOpen(true)}
-        onMouseLeave={() => setIsAcervoSubMenuOpen(false)}
+        onMouseEnter={() => handleMouseEnter(setIsAcervoSubMenuOpen)}
+        onMouseLeave={() => handleMouseLeave(setIsAcervoSubMenuOpen)}
       >
         <button
           type="button"
