@@ -21,6 +21,7 @@ const Navbar: React.FC = () => {
               width={65}
               height={65}
               style={{ width: 'auto', height: 'auto' }}
+              className="min-[1280px]:min-h-26 min-[1280px]:min-w-26"
               priority
             />
           </div>
