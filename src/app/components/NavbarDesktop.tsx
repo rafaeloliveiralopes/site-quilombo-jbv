@@ -18,11 +18,14 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
       <a href="#home" className="text-dark hover:text-black">
         Home
       </a>
-      <div className="group relative">
+      <div
+        className="group relative"
+        onMouseEnter={() => setIsSubMenuOpen(true)}
+        onMouseLeave={() => setIsSubMenuOpen(false)}
+      >
         <button
           type="button"
           className="text-dark flex items-center hover:text-black focus:outline-none"
-          onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}
         >
           Sobre Nós
           <svg
@@ -63,11 +66,14 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
           </a>
         </div>
       </div>
-      <div className="group relative">
+      <div
+        className="group relative"
+        onMouseEnter={() => setIsAcervoSubMenuOpen(true)}
+        onMouseLeave={() => setIsAcervoSubMenuOpen(false)}
+      >
         <button
           type="button"
           className="text-dark flex items-center hover:text-black focus:outline-none"
-          onClick={() => setIsAcervoSubMenuOpen(!isAcervoSubMenuOpen)}
         >
           Acervo
           <svg
