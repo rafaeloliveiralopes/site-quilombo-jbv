@@ -48,19 +48,19 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
         >
           <a
             href="#our-history"
-            className="text-dark block px-4 py-2 hover:bg-gray-100 hover:text-black xl:text-2xl"
+            className="text-dark hover:bg-light-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
             Nossa História
           </a>
           <a
             href="#our-work"
-            className="text-dark block px-4 py-2 hover:bg-gray-100 hover:text-black xl:text-2xl"
+            className="text-dark hover:bg-orange block px-4 py-2 hover:text-black xl:text-2xl"
           >
             Nosso Trabalho
           </a>
           <a
             href="#our-team"
-            className="text-dark block px-4 py-2 hover:bg-gray-100 hover:text-black xl:text-2xl"
+            className="text-dark hover:bg-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
             Nossa Equipe
           </a>
@@ -96,13 +96,13 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
         >
           <a
             href="#gallery"
-            className="text-dark block px-4 py-2 hover:bg-gray-100 hover:text-black xl:text-2xl"
+            className="text-dark hover:bg-light-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
             Galeria de Imagens
           </a>
           <a
             href="#videos"
-            className="text-dark block px-4 py-2 hover:bg-gray-100 hover:text-black xl:text-2xl"
+            className="text-dark hover:bg-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
             Vídeos
           </a>
