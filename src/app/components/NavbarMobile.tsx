@@ -39,10 +39,10 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
       <div className="flex justify-center max-[640px]:pb-8">
         <Image
           src="/logo-associacao-quilombola-joao-borges-vieira.png"
-          alt="Logo da Associação"
+          alt="Logo"
           width={96}
           height={96}
-          className="h-24 w-auto"
+          style={{ width: 'auto', height: 'auto' }}
           priority
         />
       </div>

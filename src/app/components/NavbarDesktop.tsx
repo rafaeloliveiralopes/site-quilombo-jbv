@@ -14,15 +14,18 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
   setIsAcervoSubMenuOpen,
 }) => {
   return (
-    <div className="hidden space-x-6 md:flex">
+    <div className="hidden space-x-6 md:flex xl:text-3xl">
       <a href="#home" className="text-dark hover:text-black">
         Home
       </a>
-      <div className="group relative">
+      <div
+        className="group relative"
+        onMouseEnter={() => setIsSubMenuOpen(true)}
+        onMouseLeave={() => setIsSubMenuOpen(false)}
+      >
         <button
           type="button"
           className="text-dark flex items-center hover:text-black focus:outline-none"
-          onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}
         >
           Sobre Nós
           <svg
@@ -45,29 +48,32 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
         >
           <a
             href="#our-history"
-            className="text-dark block px-4 py-2 hover:bg-gray-100 hover:text-black"
+            className="text-dark block px-4 py-2 hover:bg-gray-100 hover:text-black xl:text-2xl"
           >
             Nossa História
           </a>
           <a
             href="#our-work"
-            className="text-dark block px-4 py-2 hover:bg-gray-100 hover:text-black"
+            className="text-dark block px-4 py-2 hover:bg-gray-100 hover:text-black xl:text-2xl"
           >
             Nosso Trabalho
           </a>
           <a
             href="#our-team"
-            className="text-dark block px-4 py-2 hover:bg-gray-100 hover:text-black"
+            className="text-dark block px-4 py-2 hover:bg-gray-100 hover:text-black xl:text-2xl"
           >
             Nossa Equipe
           </a>
         </div>
       </div>
-      <div className="group relative">
+      <div
+        className="group relative"
+        onMouseEnter={() => setIsAcervoSubMenuOpen(true)}
+        onMouseLeave={() => setIsAcervoSubMenuOpen(false)}
+      >
         <button
           type="button"
           className="text-dark flex items-center hover:text-black focus:outline-none"
-          onClick={() => setIsAcervoSubMenuOpen(!isAcervoSubMenuOpen)}
         >
           Acervo
           <svg
@@ -90,13 +96,13 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
         >
           <a
             href="#gallery"
-            className="text-dark block px-4 py-2 hover:bg-gray-100 hover:text-black"
+            className="text-dark block px-4 py-2 hover:bg-gray-100 hover:text-black xl:text-2xl"
           >
             Galeria de Imagens
           </a>
           <a
             href="#videos"
-            className="text-dark block px-4 py-2 hover:bg-gray-100 hover:text-black"
+            className="text-dark block px-4 py-2 hover:bg-gray-100 hover:text-black xl:text-2xl"
           >
             Vídeos
           </a>
