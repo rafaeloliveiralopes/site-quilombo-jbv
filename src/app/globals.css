@@ -2,7 +2,7 @@
 
 :root {
   --font-title: 'Merriweather', serif;
-  --font-text: 'Source Code Pro';
+  --font-text: 'Source Code Pro', sans-serif;
 }
 
 h1,
@@ -14,18 +14,10 @@ h6 {
   font-family: var(--font-title);
 }
 
-p,
-span,
-li,
-a {
-  font-family: var(--font-text);
-}
-
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--font-text, sans-serif);
-  background-color: var(--bg-snow, #ffffff); /* Exemplo de fallback */
+  font-family: var(--font-text);
 }
 
 @theme {

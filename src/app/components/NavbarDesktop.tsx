@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface NavbarDesktopProps {
   isSubMenuOpen: boolean;
@@ -32,9 +33,9 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
 
   return (
     <div className="hidden items-center space-x-6 md:flex xl:text-2xl">
-      <a href="#home" className="text-dark hover:text-light-chocolate">
+      <Link href="#home" className="text-dark hover:text-light-chocolate">
         Home
-      </a>
+      </Link>
       <div
         className="group relative"
         onMouseEnter={() => handleMouseEnter(setIsSubMenuOpen)}
@@ -63,24 +64,24 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
             isSubMenuOpen ? 'block' : 'hidden'
           }`}
         >
-          <a
+          <Link
             href="#our-history"
             className="text-dark hover:bg-light-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
             Nossa História
-          </a>
-          <a
+          </Link>
+          <Link
             href="#our-work"
             className="text-dark hover:bg-orange block px-4 py-2 hover:text-black xl:text-2xl"
           >
             Nosso Trabalho
-          </a>
-          <a
+          </Link>
+          <Link
             href="#our-team"
             className="text-dark hover:bg-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
             Nossa Equipe
-          </a>
+          </Link>
         </div>
       </div>
       <div
@@ -111,27 +112,27 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
             isAcervoSubMenuOpen ? 'block' : 'hidden'
           }`}
         >
-          <a
+          <Link
             href="#gallery"
             className="text-dark hover:bg-light-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
             Galeria de Imagens
-          </a>
-          <a
+          </Link>
+          <Link
             href="#videos"
             className="text-dark hover:bg-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
             Vídeos
-          </a>
+          </Link>
         </div>
       </div>
-      <a href="#support" className="text-dark hover:text-light-chocolate">
+      <Link href="#support" className="text-dark hover:text-light-chocolate">
         Como Apoiar
-      </a>
-      <a href="#contact" className="text-dark hover:text-light-chocolate">
+      </Link>
+      <Link href="#contact" className="text-dark hover:text-light-chocolate">
         Contato
-      </a>
-      <a href="#donate" className="flex items-center justify-center">
+      </Link>
+      <Link href="#donate" className="flex items-center justify-center">
         <Image
           src="/donation-icon-line-black.svg"
           alt="Doação"
@@ -139,7 +140,7 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
           height={46}
           className="w-8 md:h-8"
         />
-      </a>
+      </Link>
     </div>
   );
 };
