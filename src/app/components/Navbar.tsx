@@ -14,17 +14,15 @@ const Navbar: React.FC = () => {
       <div className="container px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <div className="flex items-center">
-            <Image
-              src="/logo-associacao-quilombola-joao-borges-vieira.png"
-              alt="Logo"
-              width={65}
-              height={65}
-              style={{ width: 'auto', height: 'auto' }}
-              className="min-[1280px]:min-h-26 min-[1280px]:min-w-26"
-              priority
-            />
-          </div>
+          <Image
+            src="/logo-associacao-quilombola-joao-borges-vieira.png"
+            alt="Logo"
+            width={65}
+            height={65}
+            style={{ width: 'auto', height: 'auto' }}
+            className="min-[1280px]:min-h-26 min-[1280px]:min-w-26"
+            priority
+          />
 
           {/* Menu para dispositivos maiores */}
           <NavbarDesktop
