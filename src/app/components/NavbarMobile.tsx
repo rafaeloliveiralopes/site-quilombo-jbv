@@ -36,7 +36,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
       style={{ height: '100vh' }}
     >
       {/* Logo da associação */}
-      <div className="flex justify-center max-[640px]:pb-8">
+      <Link href="/" className="flex justify-center max-[640px]:pb-8">
         <Image
           src="/logo-associacao-quilombola-joao-borges-vieira.png"
           alt="Logo"
@@ -45,7 +45,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
           style={{ width: 'auto', height: 'auto' }}
           priority
         />
-      </div>
+      </Link>
 
       {/* Botão de fechar */}
       <button
