@@ -44,6 +44,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
           height={96}
           style={{ width: 'auto', height: 'auto' }}
           priority
+          onClick={() => setIsMenuOpen(false)}
         />
       </Link>
 
@@ -101,18 +102,21 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
             <Link
               href="/nossa-historia"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
+              onClick={() => setIsMenuOpen(false)}
             >
               Nossa História
             </Link>
             <Link
               href="/nosso-trabalho"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
+              onClick={() => setIsMenuOpen(false)}
             >
               Nosso Trabalho
             </Link>
             <Link
-              href="#nossa-equipe"
+              href="/nossa-equipe"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
+              onClick={() => setIsMenuOpen(false)}
             >
               Nossa Equipe
             </Link>
@@ -141,14 +145,16 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
         {isAcervoSubMenuOpen && (
           <div className="ml-4 space-y-2">
             <Link
-              href="#galeria"
+              href="/galeria"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
+              onClick={() => setIsMenuOpen(false)}
             >
               Galeria de Imagens
             </Link>
             <Link
               href="/videos"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
+              onClick={() => setIsMenuOpen(false)}
             >
               Vídeos
             </Link>
@@ -158,6 +164,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
       <Link
         href="/contato"
         className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
+        onClick={() => setIsMenuOpen(false)}
       >
         Contato
       </Link>
@@ -165,6 +172,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
         href="/como-apoiar"
         className="bg-green mt-8 flex w-full items-center justify-center rounded-full py-4 text-2xl font-[400] text-white transition-all duration-300 focus:outline-none active:scale-105 active:bg-green-600"
         aria-label="Quero Doar"
+        onClick={() => setIsMenuOpen(false)}
       >
         Quero Doar!
       </Link>
