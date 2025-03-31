@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import NavbarDesktop from './NavbarDesktop';
 import NavbarMobile from './NavbarMobile';
+import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,15 +15,17 @@ const Navbar: React.FC = () => {
       <div className="container px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <Image
-            src="/logo-associacao-quilombola-joao-borges-vieira.png"
-            alt="Logo"
-            width={65}
-            height={65}
-            style={{ width: 'auto', height: 'auto' }}
-            className="min-[1280px]:min-h-26 min-[1280px]:min-w-26"
-            priority
-          />
+          <Link href="/">
+            <Image
+              src="/logo-associacao-quilombola-joao-borges-vieira.png"
+              alt="Logo"
+              width={65}
+              height={65}
+              style={{ width: 'auto', height: 'auto' }}
+              className="min-[1280px]:min-h-26 min-[1280px]:min-w-26"
+              priority
+            />
+          </Link>
 
           {/* Menu para dispositivos maiores */}
           <NavbarDesktop

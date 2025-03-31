@@ -36,7 +36,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
       style={{ height: '100vh' }}
     >
       {/* Logo da associação */}
-      <div className="flex justify-center max-[640px]:pb-8">
+      <Link href="/" className="flex justify-center max-[640px]:pb-8">
         <Image
           src="/logo-associacao-quilombola-joao-borges-vieira.png"
           alt="Logo"
@@ -45,7 +45,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
           style={{ width: 'auto', height: 'auto' }}
           priority
         />
-      </div>
+      </Link>
 
       {/* Botão de fechar */}
       <button
@@ -72,7 +72,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
 
       {/* Links do menu */}
       <Link
-        href="#home"
+        href="/"
         className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
       >
         Home
@@ -99,19 +99,19 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
         {isSubMenuOpen && (
           <div className="ml-4 space-y-2">
             <Link
-              href="#our-history"
+              href="/nossa-historia"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
             >
               Nossa História
             </Link>
             <Link
-              href="#our-work"
+              href="/nosso-trabalho"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
             >
               Nosso Trabalho
             </Link>
             <Link
-              href="#our-team"
+              href="#nossa-equipe"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
             >
               Nossa Equipe
@@ -141,13 +141,13 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
         {isAcervoSubMenuOpen && (
           <div className="ml-4 space-y-2">
             <Link
-              href="#gallery"
+              href="#galeria"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
             >
               Galeria de Imagens
             </Link>
             <Link
-              href="#videos"
+              href="/videos"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
             >
               Vídeos
@@ -156,19 +156,13 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
         )}
       </div>
       <Link
-        href="#support"
-        className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
-      >
-        Como Apoiar
-      </Link>
-      <Link
-        href="#contact"
+        href="/contato"
         className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
       >
         Contato
       </Link>
       <Link
-        href="#donate"
+        href="/como-apoiar"
         className="bg-green mt-8 flex w-full items-center justify-center rounded-full py-4 text-2xl font-[400] text-white transition-all duration-300 focus:outline-none active:scale-105 active:bg-green-600"
         aria-label="Quero Doar"
       >
