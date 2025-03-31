@@ -33,7 +33,7 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
 
   return (
     <div className="hidden items-center space-x-6 md:flex xl:text-2xl">
-      <Link href="#home" className="text-dark hover:text-light-chocolate">
+      <Link href="/" className="text-dark hover:text-light-chocolate">
         Home
       </Link>
       <div
@@ -65,19 +65,19 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
           }`}
         >
           <Link
-            href="#our-history"
+            href="/nossa-historia"
             className="text-dark hover:bg-light-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
             Nossa História
           </Link>
           <Link
-            href="#our-work"
+            href="/nosso-trabalho"
             className="text-dark hover:bg-orange block px-4 py-2 hover:text-black xl:text-2xl"
           >
             Nosso Trabalho
           </Link>
           <Link
-            href="#our-team"
+            href="/nossa-equipe"
             className="text-dark hover:bg-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
             Nossa Equipe
@@ -113,26 +113,26 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
           }`}
         >
           <Link
-            href="#gallery"
+            href="/galeria"
             className="text-dark hover:bg-light-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
             Galeria de Imagens
           </Link>
           <Link
-            href="#videos"
+            href="/videos"
             className="text-dark hover:bg-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
             Vídeos
           </Link>
         </div>
       </div>
-      <Link href="#support" className="text-dark hover:text-light-chocolate">
+      <Link href="/como-apoiar" className="text-dark hover:text-light-chocolate">
         Como Apoiar
       </Link>
-      <Link href="#contact" className="text-dark hover:text-light-chocolate">
+      <Link href="/contato" className="text-dark hover:text-light-chocolate">
         Contato
       </Link>
-      <Link href="#donate" className="flex items-center justify-center">
+      <Link href="/como-apoiar" className="flex items-center justify-center">
         <Image
           src="/donation-icon-line-black.svg"
           alt="Doação"
