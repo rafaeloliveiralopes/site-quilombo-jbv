@@ -75,6 +75,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
       <Link
         href="/"
         className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
+        onClick={() => setIsMenuOpen(false)}
       >
         Home
       </Link>
