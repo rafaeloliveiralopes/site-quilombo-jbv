@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-
+import Link from 'next/link';
 interface NavbarMobileProps {
   isSubMenuOpen: boolean;
   setIsSubMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -71,12 +71,12 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
       </button>
 
       {/* Links do menu */}
-      <a
+      <Link
         href="#home"
         className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
       >
         Home
-      </a>
+      </Link>
       <div>
         <button
           type="button"
@@ -98,24 +98,24 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
         </button>
         {isSubMenuOpen && (
           <div className="ml-4 space-y-2">
-            <a
+            <Link
               href="#our-history"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
             >
               Nossa História
-            </a>
-            <a
+            </Link>
+            <Link
               href="#our-work"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
             >
               Nosso Trabalho
-            </a>
-            <a
+            </Link>
+            <Link
               href="#our-team"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
             >
               Nossa Equipe
-            </a>
+            </Link>
           </div>
         )}
       </div>
@@ -140,40 +140,40 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
         </button>
         {isAcervoSubMenuOpen && (
           <div className="ml-4 space-y-2">
-            <a
+            <Link
               href="#gallery"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
             >
               Galeria de Imagens
-            </a>
-            <a
+            </Link>
+            <Link
               href="#videos"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
             >
               Vídeos
-            </a>
+            </Link>
           </div>
         )}
       </div>
-      <a
+      <Link
         href="#support"
         className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
       >
         Como Apoiar
-      </a>
-      <a
+      </Link>
+      <Link
         href="#contact"
         className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
       >
         Contato
-      </a>
-      <a
+      </Link>
+      <Link
         href="#donate"
         className="bg-green mt-8 flex w-full items-center justify-center rounded-full py-4 text-2xl font-[400] text-white transition-all duration-300 focus:outline-none active:scale-105 active:bg-green-600"
         aria-label="Quero Doar"
       >
         Quero Doar!
-      </a>
+      </Link>
     </div>
   );
 };
