@@ -13,13 +13,13 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-snow border-b border-gray-200">
       <div className="container px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between pt-3">
           {/* Logo */}
           <Link href="/">
             <Image
               src="/logo-associacao-quilombola-joao-borges-vieira.png"
               alt="Logo Associação Comunidade Quilombola"
-              className="mb-6"
+              className="mb-3"
               width={120}
               height={120}
               style={{ width: 'auto', height: 'auto' }}
@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
           {/* Botão de menu para dispositivos móveis */}
           <button
             type="button"
-            className="text-gray-700 hover:text-black focus:outline-none md:hidden"
+            className="hover:text-dark text-gray-700 focus:outline-none md:hidden"
             aria-label="Open menu"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
