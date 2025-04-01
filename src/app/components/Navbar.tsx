@@ -18,12 +18,11 @@ const Navbar: React.FC = () => {
           <Link href="/">
             <Image
               src="/logo-associacao-quilombola-joao-borges-vieira.png"
-              alt="Logo"
-              width={65}
-              height={65}
+              alt="Logo Associação Comunidade Quilombola"
+              className="mb-6"
+              width={120}
+              height={120}
               style={{ width: 'auto', height: 'auto' }}
-              className="min-[1280px]:min-h-26 min-[1280px]:min-w-26"
-              priority
             />
           </Link>
 

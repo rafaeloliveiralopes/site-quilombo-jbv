@@ -134,7 +134,7 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
       </Link>
       <Link href="/como-apoiar" className="flex items-center justify-center">
         <Image
-          src="/donation-icon-line-black.svg"
+          src="/icons/donation-icon-line-black.svg"
           alt="Doação"
           width={46}
           height={46}
