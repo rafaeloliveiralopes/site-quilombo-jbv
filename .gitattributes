@@ -22,3 +22,6 @@
 *.tsx text eol=lf
 *.js text eol=lf
 *.jsx text eol=lf
+
+# Garante que arquivos SVG tenham fim de linha LF
+*.svg text eol=lf
