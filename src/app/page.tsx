@@ -113,7 +113,7 @@ export default function Home() {
       {/* Seção 3: Últimas Notícias */}
       <section className="text-snow bg-news-section relative px-4 py-16 md:py-28">
         <div className="relative z-10">
-          <h1 className="mb-8 text-center text-2xl font-bold md:text-4xl">ÚLTIMAS NOTÍCIAS</h1>
+          <h1 className="mb-2 text-center text-2xl font-bold md:text-4xl">ÚLTIMAS NOTÍCIAS</h1>
           <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
             {/* Card 01 */}
             <div className="p-6">
