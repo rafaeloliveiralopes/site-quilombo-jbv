@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import HowToSupport from './components/HowToSupport';
 
 export default function Home() {
   const [marginBottom, setMarginBottom] = useState('-130px');
@@ -109,60 +110,64 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Seção 4: Como Apoiar? */}
-      <section className="bg-light-chocolate text-snow px-4 py-16">
-        <h1 className="mb-4 text-center text-2xl font-bold md:text-4xl">ÚLTIMAS NOTÍCIAS</h1>
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
-          {/* Card 1 */}
-          <div className="bg-light-chocolate max-w-sm rounded-lg p-6">
-            <Link href="#">
-              <h5 className="text-snow mb-2 text-2xl font-bold tracking-tight">Notícia 01</h5>
-            </Link>
-            <p className="text-snow mb-3 font-normal">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum nisi in
-              felis ultrices interdum. Nullam dapibus viverra tempor...
-            </p>
-            <Link
-              href="#"
-              className="bg-orange text-dark inline-flex items-center rounded-lg px-3 py-2 text-center text-sm font-medium hover:bg-orange-300 focus:ring-4 focus:ring-orange-500 focus:outline-none"
-            >
-              Saiba mais
-            </Link>
-          </div>
-          {/* Card 2 */}
-          <div className="bg-light-chocolate max-w-sm rounded-lg p-6">
-            <Link href="#">
-              <h5 className="text-snow mb-2 text-2xl font-bold tracking-tight">Notícia 02</h5>
-            </Link>
-            <p className="text-snow mb-3 font-normal">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum nisi in
-              felis ultrices interdum. Nullam dapibus viverra tempor...
-            </p>
-            <Link
-              href="#"
-              className="bg-orange text-dark inline-flex items-center rounded-lg px-3 py-2 text-center text-sm font-medium hover:bg-orange-300 focus:ring-4 focus:ring-orange-500 focus:outline-none"
-            >
-              Saiba mais
-            </Link>
-          </div>
-          {/* Card 3 */}
-          <div className="bg-light-chocolate max-w-sm rounded-lg p-6">
-            <Link href="#">
-              <h5 className="text-snow mb-2 text-2xl font-bold tracking-tight">Notícia 03</h5>
-            </Link>
-            <p className="text-snow mb-3 font-normal">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum nisi in
-              felis ultrices interdum. Nullam dapibus viverra tempor...
-            </p>
-            <Link
-              href="#"
-              className="bg-orange text-dark inline-flex items-center rounded-lg px-3 py-2 text-center text-sm font-medium hover:bg-orange-300 focus:ring-4 focus:ring-orange-500 focus:outline-none"
-            >
-              Saiba mais
-            </Link>
+      {/* Seção 3: Últimas Notícias */}
+      <section className="text-snow bg-news-section relative px-4 py-28 md:py-32">
+        <div className="relative z-10">
+          <h1 className="mb-2 text-center text-2xl font-bold md:text-4xl">ÚLTIMAS NOTÍCIAS</h1>
+          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
+            {/* Card 01 */}
+            <div className="p-6">
+              <Link href="#">
+                <h5 className="mb-2 text-2xl font-bold">Noticia 01</h5>
+              </Link>
+              <p className="mb-4 md:mb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum nisi
+                in felis ultrices interdum. Nullam dapibus viverra tempor...
+              </p>
+              <Link
+                href="#"
+                className="bg-orange text-dark rounded-full px-7 py-3 text-base font-medium hover:bg-orange-300 focus:ring-4 focus:ring-orange-500 focus:outline-none md:inline-flex md:items-center md:py-2 md:text-lg"
+              >
+                Saiba mais
+              </Link>
+            </div>
+            {/* Card 02 */}
+            <div className="p-6">
+              <Link href="#">
+                <h5 className="mb-2 text-2xl font-bold">Notícia 02</h5>
+              </Link>
+              <p className="mb-4 md:mb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum nisi
+                in felis ultrices interdum. Nullam dapibus viverra tempor...
+              </p>
+              <Link
+                href="#"
+                className="bg-orange text-dark rounded-full px-7 py-3 text-base font-medium hover:bg-orange-300 focus:ring-4 focus:ring-orange-500 focus:outline-none md:inline-flex md:items-center md:py-2 md:text-lg"
+              >
+                Saiba mais
+              </Link>
+            </div>
+            {/* Card 03 */}
+            <div className="p-6">
+              <Link href="#">
+                <h5 className="mb-2 text-2xl font-bold">Notícia 03</h5>
+              </Link>
+              <p className="mb-4 md:mb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum nisi
+                in felis ultrices interdum. Nullam dapibus viverra tempor...
+              </p>
+              <Link
+                href="#"
+                className="bg-orange text-dark rounded-full px-7 py-3 text-base font-medium hover:bg-orange-300 focus:ring-4 focus:ring-orange-500 focus:outline-none md:inline-flex md:items-center md:py-2 md:text-lg"
+              >
+                Saiba mais
+              </Link>
+            </div>
           </div>
         </div>
       </section>
+      {/* Seção 4: Como Apoiar? */}
+      <HowToSupport />
     </div>
   );
 }
