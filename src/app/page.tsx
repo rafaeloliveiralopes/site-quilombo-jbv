@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import HowToSupport from './components/HowToSupport';
 
 export default function Home() {
   const [marginBottom, setMarginBottom] = useState('-130px');
@@ -109,7 +110,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Seção 4: Como Apoiar? */}
       {/* Seção 3: Últimas Notícias */}
       <section className="text-snow bg-news-section relative px-4 py-28 md:py-32">
         <div className="relative z-10">
@@ -166,6 +166,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Seção 4: Como Apoiar? */}
+      <HowToSupport />
     </div>
   );
 }
