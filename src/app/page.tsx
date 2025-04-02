@@ -150,7 +150,7 @@ export default function Home() {
             {/* Card 03 */}
             <div className="p-6">
               <Link href="#">
-                <h5 className="mb-2 text-2xl font-bold">Notícia 01</h5>
+                <h5 className="mb-2 text-2xl font-bold">Notícia 03</h5>
               </Link>
               <p className="mb-4 md:mb-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum nisi
