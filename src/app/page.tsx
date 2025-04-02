@@ -30,9 +30,10 @@ export default function Home() {
           LUTA POR DIREITOS
         </h1>
         <p className="text-dark-brown mx-auto mb-8 max-w-3xl text-lg">
-          Desde 2007, a Associação da Comunidade Quilombola Urbana João Borges Vieira atua para
-          garantir moradia, educação, cultura e dignidade às mais de 200 famílias quilombolas da
-          região. Somos resistência e conquista!
+          Desde 2007, a{' '}
+          <strong>Associação da Comunidade Quilombola Urbana João Borges Vieira </strong> atua para
+          garantir <strong>moradia, educação, cultura e dignidade</strong> às mais de 700 famílias
+          quilombolas da região. Somos resistência e conquista!
         </p>
         <div className="relative flex justify-center">
           <Image
