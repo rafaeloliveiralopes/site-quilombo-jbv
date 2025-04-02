@@ -29,3 +29,12 @@ body {
   --color-light-chocolate: #d47b65;
   --color-dark: #111827;
 }
+
+.bg-news-section {
+  background:
+    linear-gradient(to bottom, rgba(50, 3, 9, 0.9), rgba(49, 0, 1, 0.9)),
+    url('/plano-de-fundo-seção-ultimas-noticias.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
