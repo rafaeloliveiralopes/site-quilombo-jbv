@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   const [marginBottom, setMarginBottom] = useState('-130px');
@@ -21,7 +22,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
+    <div>
       {/* Seção 1: Luta por Direitos */}
       <section className="bg-light-chocolate px-4 py-16">
         <h1 className="text-dark-brown mb-4 text-center text-2xl font-bold md:text-4xl">
@@ -107,6 +108,61 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+
+      {/* Seção 4: Como Apoiar? */}
+      <section className="bg-light-chocolate text-snow px-4 py-16">
+        <h1 className="mb-4 text-center text-2xl font-bold md:text-4xl">ÚLTIMAS NOTÍCIAS</h1>
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
+          {/* Card 1 */}
+          <div className="bg-light-chocolate max-w-sm rounded-lg p-6">
+            <Link href="#">
+              <h5 className="text-snow mb-2 text-2xl font-bold tracking-tight">Notícia 01</h5>
+            </Link>
+            <p className="text-snow mb-3 font-normal">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum nisi in
+              felis ultrices interdum. Nullam dapibus viverra tempor...
+            </p>
+            <Link
+              href="#"
+              className="bg-orange text-dark inline-flex items-center rounded-lg px-3 py-2 text-center text-sm font-medium hover:bg-orange-300 focus:ring-4 focus:ring-orange-500 focus:outline-none"
+            >
+              Saiba mais
+            </Link>
+          </div>
+          {/* Card 2 */}
+          <div className="bg-light-chocolate max-w-sm rounded-lg p-6">
+            <Link href="#">
+              <h5 className="text-snow mb-2 text-2xl font-bold tracking-tight">Notícia 02</h5>
+            </Link>
+            <p className="text-snow mb-3 font-normal">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum nisi in
+              felis ultrices interdum. Nullam dapibus viverra tempor...
+            </p>
+            <Link
+              href="#"
+              className="bg-orange text-dark inline-flex items-center rounded-lg px-3 py-2 text-center text-sm font-medium hover:bg-orange-300 focus:ring-4 focus:ring-orange-500 focus:outline-none"
+            >
+              Saiba mais
+            </Link>
+          </div>
+          {/* Card 3 */}
+          <div className="bg-light-chocolate max-w-sm rounded-lg p-6">
+            <Link href="#">
+              <h5 className="text-snow mb-2 text-2xl font-bold tracking-tight">Notícia 03</h5>
+            </Link>
+            <p className="text-snow mb-3 font-normal">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum nisi in
+              felis ultrices interdum. Nullam dapibus viverra tempor...
+            </p>
+            <Link
+              href="#"
+              className="bg-orange text-dark inline-flex items-center rounded-lg px-3 py-2 text-center text-sm font-medium hover:bg-orange-300 focus:ring-4 focus:ring-orange-500 focus:outline-none"
+            >
+              Saiba mais
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
