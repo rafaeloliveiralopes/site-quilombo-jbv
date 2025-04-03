@@ -50,7 +50,7 @@ export default function Home() {
       </section>
 
       {/* Seção 2: Frentes de Atuação */}
-      <section className="bg-snow px-4 py-32 md:pt-60">
+      <section className="bg-snow px-4 py-36 md:pt-60">
         <h2 className="text-dark-brown mb-8 text-center text-2xl font-bold md:text-3xl">
           FRENTES DE ATUAÇÃO
         </h2>
