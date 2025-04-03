@@ -26,10 +26,10 @@ export default function Home() {
     <div>
       {/* Seção 1: Luta por Direitos */}
       <section className="bg-light-chocolate px-4 py-16">
-        <h1 className="text-dark-brown mb-4 text-center text-2xl font-bold md:text-4xl">
+        <h1 className="text-dark mb-4 text-center text-2xl font-bold md:text-4xl">
           LUTA POR DIREITOS
         </h1>
-        <p className="text-dark-brown mx-auto mb-8 max-w-3xl text-lg">
+        <p className="text-dark mx-auto mb-8 max-w-3xl text-lg">
           Desde 2007, a{' '}
           <strong>Associação da Comunidade Quilombola Urbana João Borges Vieira </strong> atua para
           garantir <strong>moradia, educação, cultura e dignidade</strong> às mais de 700 famílias
@@ -51,7 +51,7 @@ export default function Home() {
 
       {/* Seção 2: Frentes de Atuação */}
       <section className="bg-snow px-4 py-36 md:pt-60">
-        <h2 className="text-dark-brown mb-8 text-center text-2xl font-bold md:text-3xl">
+        <h2 className="text-dark mb-8 text-center text-2xl font-bold md:text-3xl">
           FRENTES DE ATUAÇÃO
         </h2>
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
@@ -66,7 +66,7 @@ export default function Home() {
                 className="h-16 w-16"
               />
             </div>
-            <p className="text-dark-brown">
+            <p className="text-dark">
               A associação tem sido fundamental na conquista de moradias dignas para a comunidade.
               Em parceria com o governo, foram construídas unidades habitacionais que fortalecem a
               identidade coletiva e melhoram a qualidade de vida das famílias quilombolas.
@@ -84,7 +84,7 @@ export default function Home() {
                 className="h-16 w-16"
               />
             </div>
-            <p className="text-dark-brown">
+            <p className="text-dark">
               Preservando e promovendo as tradições culturais, a associação organiza atividades como
               a dança do tambor e outras manifestações artísticas, mantendo vivas as raízes e
               fortalecendo os laços comunitários.
@@ -102,7 +102,7 @@ export default function Home() {
                 className="h-16 w-16"
               />
             </div>
-            <p className="text-dark-brown">
+            <p className="text-dark">
               A associação quilombola urbana João Borges Vieira oferece suporte às famílias em
               situação de vulnerabilidade, facilitando o acesso a programas sociais e promovendo a
               inclusão socioeconômica dos membros da comunidade.
@@ -112,7 +112,7 @@ export default function Home() {
       </section>
 
       {/* Seção 3: Últimas Notícias */}
-      <section className="text-snow bg-news-section relative px-4 py-28 md:py-32">
+      <section className="text-snow bg-news-section relative mb-6 px-4 py-28 md:py-32">
         <div className="relative z-10">
           <h1 className="mb-2 text-center text-2xl font-bold md:text-3xl">ÚLTIMAS NOTÍCIAS</h1>
           <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
