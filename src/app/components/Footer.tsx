@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function Footer() {
   return (
-    <footer className="px-auto bg-dark text-snow py-16">
+    <footer className="px-auto bg-dark text-snow mt-6 py-16">
       <div className="container mx-auto grid gap-8 sm:grid-cols-2 md:grid-cols-3">
         {/* Coluna 1: Logo e Links */}
         <div className="pl-3 md:pl-0">

@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function HowToSupport() {
   return (
-    <section className="bg-snow px-4 py-20 md:py-28 md:pt-32">
-      <h2 className="text-dark decoration-orange mb-4 text-center text-2xl font-bold underline md:mb-8 md:text-3xl">
+    <section className="bg-snow px-4 py-10 md:py-20 md:pt-16">
+      <h2 className="text-dark decoration-orange mb-4 text-center text-2xl font-bold underline md:mb-4 md:text-3xl">
         COMO APOIAR?
       </h2>
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-2 md:flex-row md:items-start">
