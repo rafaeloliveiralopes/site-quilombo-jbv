@@ -51,7 +51,7 @@ export default function Home() {
 
       {/* Seção 2: Frentes de Atuação */}
       <section className="bg-snow px-4 py-32 md:pt-60">
-        <h2 className="text-dark-brown mb-8 text-center text-xl font-bold md:text-3xl">
+        <h2 className="text-dark-brown mb-8 text-center text-2xl font-bold md:text-3xl">
           FRENTES DE ATUAÇÃO
         </h2>
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
@@ -114,7 +114,7 @@ export default function Home() {
       {/* Seção 3: Últimas Notícias */}
       <section className="text-snow bg-news-section relative px-4 py-28 md:py-32">
         <div className="relative z-10">
-          <h1 className="mb-2 text-center text-2xl font-bold md:text-4xl">ÚLTIMAS NOTÍCIAS</h1>
+          <h1 className="mb-2 text-center text-2xl font-bold md:text-3xl">ÚLTIMAS NOTÍCIAS</h1>
           <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
             {/* Card 01 */}
             <div className="p-6">
