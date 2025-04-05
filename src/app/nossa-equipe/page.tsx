@@ -1,10 +1,9 @@
 import Image from 'next/image';
 import HowToSupport from '../components/HowToSupport';
-import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const team = [
   {
-    name: 'Raiane Jessica Gouveia',
+    name: 'Raiane Gouveia',
     role: 'Presidente',
     image: '/equipe/foto-raiane.jpeg',
     bio: 'Lidero nossa comunidade com dedicação e compromisso, buscando sempre promover o fortalecimento das nossas tradições culturais, o desenvolvimento sustentável e a melhoria das condições de vida para todos os moradores. Minha atuação é focada na luta pelos direitos da comunidade quilombola e na busca de soluções que atendam às nossas necessidades, sem abrir mão da preservação das nossas raízes históricas e culturais. Como líder, me empenho para garantir um futuro mais justo e igualitário para todos.',
@@ -59,12 +58,12 @@ export default function Page() {
         <h1>Nossa Equipe</h1>
       </div>
 
-      <div className="mx-auto grid max-w-6xl gap-12 px-2 py-12 sm:grid-cols-2 md:grid-cols-2">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-2 py-12 md:grid-cols-2">
         {team.map(({ name, role, image, bio, socials }) => (
           <div key={name} className="rounded-2xl py-3 text-center shadow-lg">
             <div className="mx-auto mt-4 w-4/5">
               <Image
-                className="mx-auto mt-6 mb-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+                className="mx-auto mt-6 mb-4 h-auto w-auto rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
                 src={image}
                 alt={`${name} - ${role}`}
                 width={300}
@@ -76,10 +75,10 @@ export default function Page() {
               <p className="mx-auto mt-2 mb-3 max-w-80 text-left text-base text-gray-700 md:text-lg">
                 {bio}
               </p>
-              <div className="mt-4 flex gap-4 sm:ml-14">
+              <div className="mx-auto mb-3 max-w-80 text-left">
                 {socials.instagram && (
                   <a href={socials.instagram} target="_blank" rel="noopener noreferrer">
-                    <i className="fa-brands fa-instagram text-2xl text-orange-800"></i>
+                    <i className="fa-brands fa-instagram mr-3 text-2xl text-orange-800"></i>
                   </a>
                 )}
                 {socials.linkedin && (
