@@ -79,13 +79,13 @@ export default function Page() {
                   mostras culturais; entre outros.
                 </li>
                 <li>
-                  Projeto "Acreditar é preciso": Edital aprovado no CMDCA para realização do projeto
-                  com crianças e adolescentes em 2025. Sendo proposto oficinas de artesanatos,
-                  capoeira, dança de tambor, reforço escolar e apresentações culturais.
+                  Projeto &quot;Acreditar é preciso&quot;: Edital aprovado no CMDCA para realização
+                  do projeto com crianças e adolescentes em 2025. Sendo proposto oficinas de
+                  artesanatos, capoeira, dança de tambor, reforço escolar e apresentações culturais.
                 </li>
               </ul>
               <Image
-                src="/projeto-resgate-cultura-quilombola-img01.png"
+                src="/projeto-resgate-cultura-quilombola.png"
                 alt="Foto da Associação Comunidade Quilombola João Borges Vieira"
                 width={400}
                 height={200}
