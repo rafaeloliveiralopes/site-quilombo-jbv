@@ -139,7 +139,6 @@ export default function Page() {
         />
       </div>
       {/* Seção "Como Apoiar?" */}
-      <div className="mt-8 w-full max-w-6xl space-y-8 px-2 text-base leading-relaxed text-zinc-800 sm:px-4 md:mt-10 md:px-0 md:text-lg"></div>
       <section className="border-orange mx-auto my-12 w-full max-w-6xl border-y-2 px-4">
         <HowToSupport />
       </section>
