@@ -7,6 +7,7 @@ export default function Page() {
       <div className="bg-light-chocolate w-full px-6 py-6 text-2xl tracking-tight md:px-8 md:text-4xl">
         <h1>Galeria de Imagens</h1>
       </div>
+
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 py-12 min-[364px]:grid-cols-2 min-[639px]:grid-cols-3">
         {/* Imagem 01 */}
         <Image
@@ -14,7 +15,7 @@ export default function Page() {
           alt=""
           width={380}
           height={380}
-          className="mx-auto h-auto w-auto max-w-[90%] rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+          className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
         />
         {/* Imagem 02 */}
         <Image
@@ -22,7 +23,7 @@ export default function Page() {
           alt=""
           width={380}
           height={380}
-          className="mx-auto h-auto w-auto max-w-[90%] rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+          className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
         />
         {/* Imagem 03 */}
         <Image
@@ -30,7 +31,7 @@ export default function Page() {
           alt=""
           width={380}
           height={380}
-          className="mx-auto h-auto w-auto max-w-[90%] rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+          className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
         />
         {/* Imagem 04 */}
         <Image
@@ -38,7 +39,7 @@ export default function Page() {
           alt=""
           width={380}
           height={380}
-          className="mx-auto h-auto w-auto max-w-[90%] rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+          className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
         />
         {/* Imagem 05 */}
         <Image
@@ -46,7 +47,7 @@ export default function Page() {
           alt=""
           width={380}
           height={380}
-          className="mx-auto h-auto w-auto max-w-[90%] rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+          className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
         />
         {/* Imagem 06 */}
         <Image
@@ -54,7 +55,7 @@ export default function Page() {
           alt=""
           width={380}
           height={380}
-          className="mx-auto h-auto w-auto max-w-[90%] rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+          className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
         />
         {/* Imagem 07 */}
         <Image
@@ -62,7 +63,7 @@ export default function Page() {
           alt=""
           width={380}
           height={380}
-          className="mx-auto h-auto w-auto max-w-[90%] rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+          className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
         />
         {/* Imagem 08 */}
         <Image
@@ -70,7 +71,7 @@ export default function Page() {
           alt=""
           width={380}
           height={380}
-          className="mx-auto h-auto w-auto max-w-[90%] rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+          className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
         />
         {/* Imagem 09 */}
         <Image
@@ -78,7 +79,7 @@ export default function Page() {
           alt=""
           width={380}
           height={380}
-          className="mx-auto h-auto w-auto max-w-[90%] rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+          className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
         />
         {/* Imagem 10 */}
         <Image
@@ -86,7 +87,7 @@ export default function Page() {
           alt=""
           width={380}
           height={380}
-          className="mx-auto h-auto w-auto max-w-[90%] rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+          className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
         />
         {/* Imagem 11 */}
         <Image
@@ -94,7 +95,7 @@ export default function Page() {
           alt=""
           width={380}
           height={380}
-          className="mx-auto h-auto w-auto max-w-[90%] rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+          className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
         />
         {/* Imagem 12 */}
         <Image
@@ -102,7 +103,7 @@ export default function Page() {
           alt=""
           width={380}
           height={380}
-          className="mx-auto h-auto w-auto max-w-[90%] rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+          className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
         />
         {/* Imagem 13 */}
         <Image
@@ -110,7 +111,7 @@ export default function Page() {
           alt=""
           width={380}
           height={380}
-          className="mx-auto h-auto w-auto max-w-[90%] rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+          className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
         />
         {/* Imagem 14 */}
         <Image
@@ -118,7 +119,7 @@ export default function Page() {
           alt=""
           width={380}
           height={380}
-          className="mx-auto h-auto w-auto max-w-[90%] rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+          className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
         />
         {/* Imagem 15 */}
         <Image
@@ -126,7 +127,7 @@ export default function Page() {
           alt=""
           width={380}
           height={380}
-          className="mx-auto h-auto w-auto max-w-[90%] rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+          className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
         />
         {/* Imagem 16 */}
         <Image
@@ -134,10 +135,9 @@ export default function Page() {
           alt=""
           width={380}
           height={380}
-          className="mx-auto h-auto w-auto max-w-[90%] rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+          className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
         />
       </div>
-
       {/* Seção "Como Apoiar?" */}
       <div className="mt-8 w-full max-w-6xl space-y-8 px-2 text-base leading-relaxed text-zinc-800 sm:px-4 md:mt-10 md:px-0 md:text-lg"></div>
       <section className="border-orange mx-auto my-12 w-full max-w-6xl border-y-2 px-4">
