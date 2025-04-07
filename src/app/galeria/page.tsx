@@ -7,7 +7,7 @@ export default function Page() {
       <div className="bg-light-chocolate w-full px-6 py-6 text-2xl tracking-tight md:px-8 md:text-4xl">
         <h1>Galeria de Imagens</h1>
       </div>
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 py-12 sm:px-[10%] md:max-w-[90%] md:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 py-12 md:max-w-[72%] md:grid-cols-3">
         {/* Imagem 01 */}
         <Image
           src="/galeria/img-acervo-01.png"
