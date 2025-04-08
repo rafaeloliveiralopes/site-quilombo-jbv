@@ -146,14 +146,14 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
         {isAcervoSubMenuOpen && (
           <div className="ml-4 space-y-2">
             <Link
-              href="/galeria"
+              href="/acervo-galeria"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
               onClick={() => setIsMenuOpen(false)}
             >
               Galeria de Imagens
             </Link>
             <Link
-              href="/videos"
+              href="/acervo-videos"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
               onClick={() => setIsMenuOpen(false)}
             >
