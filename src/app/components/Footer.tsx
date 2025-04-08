@@ -37,12 +37,12 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/galeria" className="hover:text-orange">
+              <Link href="/acervo-galeria" className="hover:text-orange">
                 Galeria de Imagens
               </Link>
             </li>
             <li>
-              <Link href="/videos" className="hover:text-orange">
+              <Link href="/acervo-videos" className="hover:text-orange">
                 Vídeos
               </Link>
             </li>

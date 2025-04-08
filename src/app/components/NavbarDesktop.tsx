@@ -113,13 +113,13 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
           }`}
         >
           <Link
-            href="/galeria"
+            href="/acervo-galeria"
             className="text-dark hover:bg-light-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
             Galeria de Imagens
           </Link>
           <Link
-            href="/videos"
+            href="/acervo-videos"
             className="text-dark hover:bg-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
             Vídeos
