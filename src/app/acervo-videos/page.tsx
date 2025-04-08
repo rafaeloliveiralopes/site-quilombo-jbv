@@ -1,6 +1,8 @@
+'use client';
+import { useState } from 'react';
 import HowToSupport from '../components/HowToSupport';
 
-// Links para os vídeos no youtube a respeito da Associação Quilombola João Borges Vieira
+// Links para os vídeos no YouTube
 const videos = [
   'https://www.youtube.com/embed/7R-JTc5Xffo',
   'https://www.youtube.com/embed/tKxMjyjd7jk',
@@ -16,24 +18,51 @@ const videos = [
 ];
 
 export default function VideosPage() {
+  // Estado que controla quantos vídeos estão visíveis (iniciando com 3)
+  const [visibleCount, setVisibleCount] = useState(3);
+
+  // Função para carregar mais vídeos (neste caso, +2)
+  const handleLoadMore = () => {
+    setVisibleCount((prevCount) => {
+      const newCount = prevCount + 2;
+      // Evita exceder o total de vídeos
+      return newCount <= videos.length ? newCount : videos.length;
+    });
+  };
+
   return (
     <>
       <div className="bg-chocolate text-snow w-full px-6 py-6 text-2xl tracking-tight md:px-8 md:text-4xl">
         <h1>Vídeos</h1>
       </div>
 
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-6">
-        {videos.map((link, index) => (
-          <div key={index} className="">
+      {/* Seção de Vídeos */}
+      <section className="lx:px-0 mx-auto grid max-w-6xl grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] justify-center gap-12 px-4 py-12 md:gap-4">
+        {videos.slice(0, visibleCount).map((video, idx) => (
+          <div key={idx}>
             <iframe
-              src={link}
-              title={`Video ${index + 1}`}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
+              src={video}
+              allowFullScreen={false}
+              loading="lazy"
+              title={`Vídeo ${idx + 1} - Associação Quilombola João Borges Vieira`}
+              className="aspect-video w-full rounded-xl"
             />
           </div>
         ))}
-      </div>
+      </section>
+
+      {/* Botão para carregar mais vídeos (apenas se ainda houver vídeos a exibir) */}
+      {visibleCount < videos.length && (
+        <div className="mx-auto mb-8 flex max-w-6xl justify-center">
+          <button
+            onClick={handleLoadMore}
+            className="bg-chocolate text-snow hover:bg-brown-700 cursor-pointer rounded-lg px-6 py-3 md:text-xl"
+          >
+            Carregar mais
+          </button>
+        </div>
+      )}
+
       {/* Seção "Como Apoiar?" */}
       <section className="border-orange mx-auto my-12 w-full max-w-6xl border-y-2 px-4">
         <HowToSupport />
