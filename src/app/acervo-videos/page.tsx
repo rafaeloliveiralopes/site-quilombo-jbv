@@ -56,7 +56,7 @@ export default function VideosPage() {
         <div className="mx-auto mb-8 flex max-w-6xl justify-center">
           <button
             onClick={handleLoadMore}
-            className="bg-chocolate text-snow hover:bg-brown-700 cursor-pointer rounded-lg px-6 py-3 md:text-xl"
+            className="bg-chocolate text-snow cursor-pointer rounded-lg px-6 py-3 hover:bg-amber-800 md:text-xl"
           >
             Carregar mais
           </button>
