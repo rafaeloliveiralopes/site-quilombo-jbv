@@ -1,7 +1,7 @@
 export default function Form() {
   return (
-    <form className="bg-light-chocolate mx-auto max-w-md rounded-lg px-4 py-6">
-      <h2 className="mb-6 text-center text-lg font-semibold">FORMULÁRIO PARA CONTATO</h2>
+    <form className="bg-light-chocolate mx-auto max-w-md rounded-2xl px-4 py-9 lg:px-10">
+      <h2 className="mb-6 text-center text-lg lg:text-2xl">FORMULÁRIO PARA CONTATO</h2>
 
       <div className="mb-4">
         <label htmlFor="name" className="mb-1 block">
