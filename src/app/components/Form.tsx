@@ -36,6 +36,14 @@ export default function Form() {
     });
 
     setPendingSubmission(false);
+    setFormData({
+      contactName: '',
+      phone: '',
+      email: '',
+      subject: '',
+      message: '',
+    });
+
     alert('Mensagem enviada com sucesso!');
   };
 
@@ -134,7 +142,6 @@ export default function Form() {
           Enviar
         </button>
       </form>
-
       {/* Modal de Consentimento */}
       {showModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
