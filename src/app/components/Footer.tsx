@@ -95,6 +95,8 @@ export default function Footer() {
             style={{ border: 0, padding: 0 }}
             allowFullScreen={true}
             loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            sandbox="allow-scripts allow-same-origin allow-popups"
           ></iframe>
         </div>
       </div>
