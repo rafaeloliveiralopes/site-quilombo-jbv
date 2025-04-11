@@ -48,6 +48,7 @@ export default function Form() {
           required
           value={formData.contactName}
           onChange={handleChange}
+          autoComplete="name"
         />
       </div>
 
@@ -63,6 +64,7 @@ export default function Form() {
           required
           value={formData.phone}
           onChange={handleChange}
+          autoComplete="tel"
         />
       </div>
 
@@ -78,6 +80,7 @@ export default function Form() {
           required
           value={formData.email}
           onChange={handleChange}
+          autoComplete="email"
         />
       </div>
 
@@ -93,6 +96,7 @@ export default function Form() {
           required
           value={formData.subject}
           onChange={handleChange}
+          autoComplete="off"
         />
       </div>
 
@@ -108,6 +112,7 @@ export default function Form() {
           required
           value={formData.message}
           onChange={handleChange}
+          autoComplete="off"
         ></textarea>
       </div>
 
