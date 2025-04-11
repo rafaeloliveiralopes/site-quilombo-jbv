@@ -23,8 +23,28 @@ export async function POST(req: Request) {
 
   try {
     await transporter.sendMail(mailOptions);
-    return NextResponse.json({ message: 'Email enviado com sucesso!' }, { status: 200 });
+    return NextResponse.json(
+      { message: 'Email enviado com sucesso!' },
+      {
+        status: 200,
+        headers: {
+          'Content-Security-Policy': "default-src 'self'; frame-ancestors 'none';",
+          'Referrer-Policy': 'strict-origin-when-cross-origin',
+          'Permissions-Policy': 'geolocation=(), microphone=(), camera=()',
+        },
+      }
+    );
   } catch (error) {
-    return NextResponse.json({ error: 'Erro ao enviar o email.' }, { status: 500 });
+    return NextResponse.json(
+      { error: 'Erro ao enviar o email.' },
+      {
+        status: 500,
+        headers: {
+          'Content-Security-Policy': "default-src 'self'; frame-ancestors 'none';",
+          'Referrer-Policy': 'strict-origin-when-cross-origin',
+          'Permissions-Policy': 'geolocation=(), microphone=(), camera=()',
+        },
+      }
+    );
   }
 }
