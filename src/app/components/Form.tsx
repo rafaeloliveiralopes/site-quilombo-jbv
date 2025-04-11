@@ -1,6 +1,38 @@
+import React, { useState, ChangeEvent, FormEvent } from 'react';
+
 export default function Form() {
+  const [formData, setFormData] = useState({
+    contactName: '',
+    phone: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const response = await fetch('/api/sendEmail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+  };
+
   return (
-    <form className="bg-light-chocolate mx-auto max-w-md rounded-2xl px-4 py-9 lg:px-10">
+    <form
+      onSubmit={handleSubmit}
+      className="bg-light-chocolate mx-auto max-w-md rounded-2xl px-4 py-9 lg:px-10"
+    >
       <h2 className="mb-6 text-center text-lg lg:text-2xl">FORMULÁRIO PARA CONTATO</h2>
 
       <div className="mb-4">
@@ -13,6 +45,8 @@ export default function Form() {
           name="name"
           className="b w-full border-b bg-transparent px-0 py-2 transition-colors duration-200 focus:bg-white focus:outline-none"
           required
+          value={formData.contactName}
+          onChange={handleChange}
         />
       </div>
 
@@ -26,6 +60,8 @@ export default function Form() {
           name="phone"
           className="b w-full border-b bg-transparent px-0 py-2 transition-colors duration-200 focus:bg-white focus:outline-none"
           required
+          value={formData.phone}
+          onChange={handleChange}
         />
       </div>
 
@@ -39,6 +75,8 @@ export default function Form() {
           name="email"
           className="b w-full border-b bg-transparent px-0 py-2 transition-colors duration-200 focus:bg-white focus:outline-none"
           required
+          value={formData.email}
+          onChange={handleChange}
         />
       </div>
 
@@ -52,6 +90,8 @@ export default function Form() {
           name="subject"
           className="b w-full border-b bg-transparent px-0 py-2 transition-colors duration-200 focus:bg-white focus:outline-none"
           required
+          value={formData.subject}
+          onChange={handleChange}
         />
       </div>
 
@@ -65,6 +105,8 @@ export default function Form() {
           rows={4}
           className="w-full rounded-md bg-white px-3 py-2 focus:bg-white focus:outline-none"
           required
+          value={formData.message}
+          onChange={handleChange}
         ></textarea>
       </div>
 
