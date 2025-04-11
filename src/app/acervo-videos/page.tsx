@@ -4,17 +4,17 @@ import HowToSupport from '../components/HowToSupport';
 
 // Links para os vídeos no YouTube
 const videos = [
-  'https://www.youtube.com/embed/7R-JTc5Xffo',
-  'https://www.youtube.com/embed/tKxMjyjd7jk',
-  'https://www.youtube.com/embed/-Itz2DJS4G4',
-  'https://www.youtube.com/embed/D606OzlRSTk',
-  'https://www.youtube.com/embed/tKxMjyjd7jk',
-  'https://www.youtube.com/embed/fbzddL8x_bM',
-  'https://www.youtube.com/embed/n4DnTJan5LA',
-  'https://www.youtube.com/embed/3AK-dtx91kE',
-  'https://www.youtube.com/embed/c0EW0NU6u9o',
-  'https://www.youtube.com/embed/JLdsATdY8vc',
-  'https://www.youtube.com/embed/97rAKaGaXW0',
+  'https://www.youtube-nocookie.com/embed/7R-JTc5Xffo',
+  'https://www.youtube-nocookie.com/embed/tKxMjyjd7jk',
+  'https://www.youtube-nocookie.com/embed/-Itz2DJS4G4',
+  'https://www.youtube-nocookie.com/embed/D606OzlRSTk',
+  'https://www.youtube-nocookie.com/embed/tKxMjyjd7jk',
+  'https://www.youtube-nocookie.com/embed/fbzddL8x_bM',
+  'https://www.youtube-nocookie.com/embed/n4DnTJan5LA',
+  'https://www.youtube-nocookie.com/embed/3AK-dtx91kE',
+  'https://www.youtube-nocookie.com/embed/c0EW0NU6u9o',
+  'https://www.youtube-nocookie.com/embed/JLdsATdY8vc',
+  'https://www.youtube-nocookie.com/embed/97rAKaGaXW0',
 ];
 
 export default function VideosPage() {
