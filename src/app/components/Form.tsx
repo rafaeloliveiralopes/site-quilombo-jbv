@@ -37,13 +37,13 @@ export default function Form() {
       <h2 className="mb-6 text-center text-lg lg:text-2xl">FORMULÁRIO PARA CONTATO</h2>
 
       <div className="mb-4">
-        <label htmlFor="name" className="mb-1 block">
+        <label htmlFor="contactName" className="mb-1 block">
           Nome
         </label>
         <input
           type="text"
-          id="name"
-          name="name"
+          id="contactName"
+          name="contactName"
           className="b w-full border-b bg-transparent px-0 py-2 transition-colors duration-200 focus:bg-white focus:outline-none"
           required
           value={formData.contactName}
