@@ -27,7 +27,7 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
   const handleMouseLeave = (setOpen: React.Dispatch<React.SetStateAction<boolean>>) => {
     const timer = setTimeout(() => {
       setOpen(false); // Fecha o submenu após o atraso
-    }, 400); // Atraso de 400ms
+    }, 300); // Atraso de 300ms
     setSubmenuTimer(timer);
   };
 
