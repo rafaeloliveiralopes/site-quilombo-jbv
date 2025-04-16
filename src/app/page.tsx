@@ -1,11 +1,97 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import HowToSupport from './components/HowToSupport';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export default function Home() {
+  //------------ Animações (Início) -------------//
+
+  // Home
+  const imageRef = useRef<HTMLImageElement>(null);
+
+  // Cards 'FRENTES DE ATUAÇÃO'
+  const card1Ref = useRef<HTMLDivElement>(null);
+  const card2Ref = useRef<HTMLDivElement>(null);
+  const card3Ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Anima imagem da home
+    gsap.fromTo(
+      imageRef.current,
+      { y: 100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1.2,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: imageRef.current,
+          start: 'top 80%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
+
+    // Seção "FRENTES DE ATUAÇÃO" (todos da esquerda para a direita)
+    gsap.fromTo(
+      card1Ref.current,
+      { x: -250, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 2.0,
+        ease: 'power3.out',
+
+        scrollTrigger: {
+          trigger: card1Ref.current,
+          start: 'top 60%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
+
+    gsap.fromTo(
+      card2Ref.current,
+      { x: -300, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 2.0,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: card2Ref.current,
+          start: 'top 60%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
+
+    gsap.fromTo(
+      card3Ref.current,
+      { x: -400, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 2.0,
+        ease: 'power3.out',
+
+        scrollTrigger: {
+          trigger: card3Ref.current,
+          start: 'top 60%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
+  }, []);
+
+  //------------ Animações (Fim) -------------//
+
   const [marginBottom, setMarginBottom] = useState('-130px');
 
   useEffect(() => {
@@ -37,6 +123,7 @@ export default function Home() {
         </p>
         <div className="relative flex justify-center">
           <Image
+            ref={imageRef}
             src="/imagem-associacao-quilombo-urbano-joao-borges-vieira.png"
             alt="Foto da Associação Comunidade Quilombola Joao Borges Vieira"
             width={800}
@@ -54,7 +141,7 @@ export default function Home() {
         <h2 className="text-dark mb-8 text-center text-2xl font-bold md:text-3xl">
           FRENTES DE ATUAÇÃO
         </h2>
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
+        <div ref={card1Ref} className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
           {/* Card 1 */}
           <div className="bg-yellow rounded-lg p-6 shadow-md">
             <div className="mb-4 flex justify-center">
@@ -74,7 +161,7 @@ export default function Home() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-yellow rounded-lg p-6 shadow-md">
+          <div ref={card2Ref} className="bg-yellow rounded-lg p-6 shadow-md">
             <div className="mb-4 flex justify-center">
               <Image
                 src="/icons/art-palette-svgrepo-com.svg"
@@ -92,7 +179,7 @@ export default function Home() {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-yellow rounded-lg p-6 shadow-md">
+          <div ref={card3Ref} className="bg-yellow rounded-lg p-6 shadow-md">
             <div className="mb-4 flex justify-center">
               <Image
                 src="/icons/care-donation-svgrepo-com.svg"
