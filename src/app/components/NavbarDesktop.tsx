@@ -27,12 +27,12 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
   const handleMouseLeave = (setOpen: React.Dispatch<React.SetStateAction<boolean>>) => {
     const timer = setTimeout(() => {
       setOpen(false); // Fecha o submenu após o atraso
-    }, 400); // Atraso de 400ms
+    }, 300); // Atraso de 300ms
     setSubmenuTimer(timer);
   };
 
   return (
-    <div className="hidden items-center space-x-6 md:flex xl:text-2xl">
+    <div className="hidden items-center space-x-6 xl:flex xl:text-2xl">
       <Link href="/" className="text-dark hover:text-light-chocolate">
         Home
       </Link>

@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-snow border-b border-gray-200">
       <div className="container px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between pt-3">
+        <div className="flex items-center justify-between pt-3 xl:pl-14 2xl:pl-40">
           {/* Logo */}
           <Link href="/">
             <Image
@@ -25,19 +25,10 @@ const Navbar: React.FC = () => {
               style={{ width: 'auto', height: 'auto' }}
             />
           </Link>
-
-          {/* Menu para dispositivos maiores */}
-          <NavbarDesktop
-            isSubMenuOpen={isSubMenuOpen}
-            setIsSubMenuOpen={setIsSubMenuOpen}
-            isAcervoSubMenuOpen={isAcervoSubMenuOpen}
-            setIsAcervoSubMenuOpen={setIsAcervoSubMenuOpen}
-          />
-
           {/* Botão de menu para dispositivos móveis */}
           <button
             type="button"
-            className="hover:text-dark text-gray-700 focus:outline-none md:hidden"
+            className="hover:text-dark flex justify-around text-gray-700 focus:outline-none xl:hidden"
             aria-label="Open menu"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -56,6 +47,14 @@ const Navbar: React.FC = () => {
               />
             </svg>
           </button>
+
+          {/* Menu para dispositivos maiores */}
+          <NavbarDesktop
+            isSubMenuOpen={isSubMenuOpen}
+            setIsSubMenuOpen={setIsSubMenuOpen}
+            isAcervoSubMenuOpen={isAcervoSubMenuOpen}
+            setIsAcervoSubMenuOpen={setIsAcervoSubMenuOpen}
+          />
         </div>
 
         {/* Menu para dispositivos móveis */}

@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Page() {
   return (
     <>
-      <div className="w-full bg-orange-400 px-6 py-6 text-2xl tracking-tight md:px-8 md:text-4xl">
+      <div className="w-full bg-orange-400 px-6 py-6 text-2xl tracking-tight md:text-4xl xl:pl-14 2xl:pl-46">
         <h1>Fale Conosco</h1>
       </div>
       <div className="w-full pt-8 pl-6 lg:pl-0 lg:text-center">

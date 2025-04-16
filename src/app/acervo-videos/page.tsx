@@ -32,7 +32,7 @@ export default function VideosPage() {
 
   return (
     <>
-      <div className="bg-chocolate text-snow w-full px-6 py-6 text-2xl tracking-tight md:px-8 md:text-4xl">
+      <div className="bg-chocolate text-snow w-full px-6 py-6 text-2xl tracking-tight md:text-4xl xl:pl-14 2xl:pl-46">
         <h1>Vídeos</h1>
       </div>
 
