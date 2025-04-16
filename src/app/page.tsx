@@ -14,6 +14,7 @@ export default function Home() {
   const imageRef = useRef<HTMLImageElement>(null);
 
   // Cards 'FRENTES DE ATUAÇÃO'
+  const actionsTitleRef = useRef<HTMLHeadingElement>(null);
   const card1Ref = useRef<HTMLDivElement>(null);
   const card2Ref = useRef<HTMLDivElement>(null);
   const card3Ref = useRef<HTMLDivElement>(null);
@@ -45,6 +46,21 @@ export default function Home() {
     );
 
     // Seção "FRENTES DE ATUAÇÃO" (todos da esquerda para a direita)
+    gsap.fromTo(
+      actionsTitleRef.current,
+      { y: 100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1.0,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: actionsTitleRef.current,
+          start: 'top 95%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
     gsap.fromTo(
       card1Ref.current,
       { x: -250, opacity: 0 },
@@ -209,7 +225,10 @@ export default function Home() {
 
       {/* Seção 2: Frentes de Atuação */}
       <section className="bg-snow px-4 py-36 md:pt-60">
-        <h2 className="text-dark mb-8 text-center text-2xl font-bold md:text-3xl">
+        <h2
+          ref={actionsTitleRef}
+          className="text-dark mb-8 text-center text-2xl font-bold md:text-3xl"
+        >
           FRENTES DE ATUAÇÃO
         </h2>
         <div ref={card1Ref} className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
