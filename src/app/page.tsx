@@ -130,7 +130,7 @@ export default function Home() {
 
     gsap.fromTo(
       newsCard1Ref.current,
-      { x: -150, opacity: 0 },
+      { x: 150, opacity: 0 },
       {
         x: 0,
         opacity: 1,
@@ -146,7 +146,7 @@ export default function Home() {
 
     gsap.fromTo(
       newsCard2Ref.current,
-      { x: -150, opacity: 0 },
+      { x: 150, opacity: 0 },
       {
         x: 0,
         opacity: 1,
@@ -162,7 +162,7 @@ export default function Home() {
 
     gsap.fromTo(
       newsCard3Ref.current,
-      { x: -150, opacity: 0 },
+      { x: 150, opacity: 0 },
       {
         x: 0,
         opacity: 1,
