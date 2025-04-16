@@ -4,7 +4,7 @@ import QRCodeDonationBox from '../components/QrCodeDonationBox';
 export default function Page() {
   return (
     <>
-      <div className="bg-light-chocolate w-full px-6 py-6 text-2xl tracking-tight md:px-8 md:text-4xl">
+      <div className="bg-light-chocolate w-full px-6 py-6 text-2xl tracking-tight md:text-4xl xl:pl-14 2xl:pl-46">
         <h1>Como Apoiar</h1>
       </div>
 

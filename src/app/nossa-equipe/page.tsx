@@ -54,7 +54,7 @@ const team = [
 export default function Page() {
   return (
     <>
-      <div className="bg-chocolate w-full px-6 py-6 text-2xl tracking-tight text-white md:px-8 md:text-4xl">
+      <div className="bg-chocolate w-full px-6 py-6 text-2xl tracking-tight text-white md:text-4xl xl:pl-14 2xl:pl-46">
         <h1>Nossa Equipe</h1>
       </div>
 
