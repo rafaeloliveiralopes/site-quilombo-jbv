@@ -18,6 +18,12 @@ export default function Home() {
   const card2Ref = useRef<HTMLDivElement>(null);
   const card3Ref = useRef<HTMLDivElement>(null);
 
+  // Cards 'ÚLTIMAS NOTÍCIAS'
+  const newsTitleRef = useRef<HTMLHeadingElement>(null);
+  const newsCard1Ref = useRef<HTMLDivElement>(null);
+  const newsCard2Ref = useRef<HTMLDivElement>(null);
+  const newsCard3Ref = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -84,6 +90,71 @@ export default function Home() {
         scrollTrigger: {
           trigger: card3Ref.current,
           start: 'top 60%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
+
+    // Seção "ÚLTIMAS NOTÍCIAS"
+    gsap.fromTo(
+      newsTitleRef.current,
+      { y: 100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1.0,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: newsTitleRef.current,
+          start: 'top 85%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
+
+    gsap.fromTo(
+      newsCard1Ref.current,
+      { x: -150, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.2,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: newsCard1Ref.current,
+          start: 'top 90%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
+
+    gsap.fromTo(
+      newsCard2Ref.current,
+      { x: -150, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.4,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: newsCard2Ref.current,
+          start: 'top 90%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
+
+    gsap.fromTo(
+      newsCard3Ref.current,
+      { x: -150, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.6,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: newsCard3Ref.current,
+          start: 'top 90%',
           toggleActions: 'play none none none',
         },
       }
@@ -201,10 +272,12 @@ export default function Home() {
       {/* Seção 3: Últimas Notícias */}
       <section className="text-snow bg-news-section relative mb-6 px-4 py-28 md:py-32">
         <div className="relative z-10">
-          <h1 className="mb-2 text-center text-2xl font-bold md:text-3xl">ÚLTIMAS NOTÍCIAS</h1>
+          <h1 ref={newsTitleRef} className="mb-2 text-center text-2xl font-bold md:text-3xl">
+            ÚLTIMAS NOTÍCIAS
+          </h1>
           <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
             {/* Card 01 */}
-            <div className="p-6">
+            <div ref={newsCard1Ref} className="p-6">
               <Link href="#">
                 <h5 className="mb-2 text-2xl font-bold">Noticia 01</h5>
               </Link>
@@ -220,7 +293,7 @@ export default function Home() {
               </Link>
             </div>
             {/* Card 02 */}
-            <div className="p-6">
+            <div ref={newsCard2Ref} className="p-6">
               <Link href="#">
                 <h5 className="mb-2 text-2xl font-bold">Notícia 02</h5>
               </Link>
@@ -236,7 +309,7 @@ export default function Home() {
               </Link>
             </div>
             {/* Card 03 */}
-            <div className="p-6">
+            <div ref={newsCard3Ref} className="p-6">
               <Link href="#">
                 <h5 className="mb-2 text-2xl font-bold">Notícia 03</h5>
               </Link>
