@@ -15,7 +15,7 @@ const team = [
     name: 'Karoline Souza',
     role: 'Secretária Executiva',
     image: '/equipe/foto-karoline.jpeg',
-    bio: 'Palestrante e criadora de projetos na comunidade Quilombola, com formação em Letras Linguística, Licenciatura em Letras Português e atualmente estudante de Direito pelo Universidade Estadual de Goiás. Ao longo da minha trajetória, tenho me dedicado a criar e implementar projetos que promovem a educação, a cultura e o fortalecimento da nossa comunidade. Minhas palestras e iniciativas buscam incentivar o protagonismo da juventude quilombola e destacar a importância das nossas tradições e da preservação da nossa história. Acredito que a educação e a troca de conhecimentos são ferramentas essenciais para o empoderamento e o desenvolvimento sustentável das comunidades tradicionais.',
+    bio: 'Palestrante e criadora de projetos na comunidade Quilombola, com formação em Letras Linguística, Licenciatura em Letras Português e atualmente estudante de Direito pelo Universidade Estadual de Goiás. Ao longo da minha trajetória, tenho me dedicado a criar e implementar projetos que promovem a educação, a cultura e o fortalecimento da nossa comunidade. Minhas palestras e iniciativas buscam incentivar o protagonismo da juventude quilombola e destacar a importância das nossas tradições e da preservação da nossa história. Acredito que a educação e a troca de conhecimentos são ferramentas essenciais para o empoderamento e o desenvolvimento sustentável das comunidades tradicionais.',
     socials: {
       instagram: 'https://instagram.com',
     },
