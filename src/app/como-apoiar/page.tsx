@@ -73,22 +73,21 @@ export default function Page() {
                 individual permite que qualquer pessoa faça parte dessa transformação.
               </p>
               <p>
-                Doar é simples e seguro! Clique em “Doar via PayPal” ou escaneie o código QR com a
-                câmera de seu celular. Você será redirecionado(a) para a página do PayPal. Caso você
-                não possua uma conta PayPal, escolha a opção “Fazer a doação com um Cartão de
-                Crédito” e preencha seus dados. Se sua moeda não for Real Brasileiro, não se
-                preocupe, insira o valor que deseja doar em sua moeda local e o pagamento será
-                convertido automaticamente.
+                Doar é simples e seguro! Escaneie o código QR com a câmera de seu celular para
+                realizar a sua doação via Pix. Se você deseja fazer a sua doação de outra forma,
+                clique no botão 'Quero Doar' e nos informe como gostaria de fazer a sua doação que
+                lhe passaremos as informações necessárias para ajudá-lo(a).
               </p>
               <p>Juntos, podemos transformar vidas e preservar nossa história!</p>
             </div>
           </section>
 
           <Link
-            href="/#"
-            className="bg-green text-dark inline-block rounded-full px-6 py-3 text-base font-medium transition hover:bg-green-600 md:text-lg"
+            href="https://wa.me/556299829177?text=Olá,%20gostaria%20de%20fazer%20uma%20doação%20para%20a%20Associação%20Quilombola%20Urbana%20João%20Borges%20Vieira%20de%20outra%20forma!"
+            target="_blank"
+            className="bg-green text-dark inline-block rounded-full px-6 py-3 text-base font-medium transition hover:bg-blue-600 hover:text-white md:text-lg"
           >
-            Doar via PayPal
+            Quero Doar
           </Link>
         </div>
       </div>

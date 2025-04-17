@@ -11,7 +11,7 @@ export default function QRCodeDonationBox() {
       </p>
       <div className="md:mx-20">
         <Image
-          src="/qrcode.png"
+          src="/qrcode-pix.png"
           alt="QR Code para doação via Pix"
           className="mt-4 h-48 w-48 rounded-xl border md:mt-0 md:py-2"
           width={120}
