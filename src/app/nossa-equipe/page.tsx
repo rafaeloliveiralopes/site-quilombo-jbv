@@ -32,9 +32,8 @@ const team = [
   {
     name: 'Domingas Quilombola',
     role: 'Coordenadora de Saberes e Tradição',
-    image:
-      '/equipe/domingas-goncalves-coordenadora-de-saberes-da-associacao-quilombola-joao-borges-vieira.png',
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet bibendum tortor. Fusce dictum tempus magna, id consectetur mi dignissim quis. Morbi in arcu tempus, molestie odio non, eleifend ex.',
+    image: '/equipe/foto-domingas-goncalves.jpeg',
+    bio: 'Sou Domingas Gouveia de Carvalho, conhecida como Domingas Quilombola. Sou pedagoga, ex-vereadora de Uruaçu (GO), ex-presidente da Comunidade Quilombola João Borges Vieira e atualmente atuo como coordenadora da CONAQ. Minha trajetória é marcada pela luta por moradia, educação e direitos das comunidades quilombolas, sempre com o compromisso de fortalecer nossa identidade e garantir justiça social.',
     socials: {
       instagram: 'https://instagram.com',
     },
