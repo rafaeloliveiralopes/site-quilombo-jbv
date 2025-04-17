@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={`bg-snow antialiased`}>
         <Navbar />
-        <main className="mx-auto w-full flex-1">{children}</main>
+        <main className="mx-auto w-full flex-1 overflow-x-hidden">{children}</main>
         <Footer />
       </body>
     </html>
