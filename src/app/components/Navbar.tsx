@@ -13,15 +13,15 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-snow border-b border-gray-200">
       <div className="container px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between pt-3 xl:pl-14 2xl:pl-40">
+        <div className="flex items-center justify-between xl:pl-14 2xl:pl-40">
           {/* Logo */}
           <Link href="/">
             <Image
               src="/logo-associacao-quilombola-joao-borges-vieira.png"
               alt="Logo Associação Comunidade Quilombola"
-              className="mb-3"
               width={120}
               height={120}
+              className="py-3"
               style={{ width: 'auto', height: 'auto' }}
             />
           </Link>

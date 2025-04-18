@@ -32,7 +32,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
 
   return (
     <div
-      className="bg-light-chocolate absolute top-0 left-0 z-50 w-full space-y-4 p-16 pt-8 text-3xl font-[300] shadow-lg max-[740px]:pt-16 max-[600px]:text-2xl"
+      className="bg-light-chocolate absolute top-0 left-0 z-50 w-full space-y-2 p-16 pt-8 text-3xl font-[300] shadow-lg max-[740px]:pt-16 max-[600px]:text-2xl"
       style={{ height: '100vh' }}
     >
       {/* Logo da associação */}
