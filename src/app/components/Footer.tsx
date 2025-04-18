@@ -5,18 +5,18 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function Footer() {
   return (
-    <footer className="px-auto bg-dark text-snow mt-6 py-16">
+    <footer className="px-auto bg-dark text-snow mt-6 py-9">
       <div className="container mx-auto grid gap-8 sm:grid-cols-2 md:grid-cols-3">
         {/* Coluna 1: Logo e Links */}
         <div className="pl-3 md:pl-0">
           <Link href="/">
             <Image
-              src="/logo-associacao-quilombola-joao-borges-vieira.png"
+              src="/logo-white-text.png"
               alt="Logo Associação Comunidade Quilombola"
-              className="mb-8"
               width={120}
               height={120}
               style={{ width: 'auto', height: 'auto' }}
+              className="mb-4"
             />
           </Link>
           <h3 className="mb-1 text-lg font-semibold">Mapa do site</h3>
@@ -65,7 +65,7 @@ export default function Footer() {
         </div>
 
         {/* Coluna 2: Redes Sociais */}
-        <div className="pl-3 md:pt-2 md:pl-0">
+        <div className="pl-3 md:pt-6 md:pl-0">
           <h3 className="mb-1 text-lg font-semibold">Siga-nos nas Redes Sociais</h3>
           <div className="flex space-x-4">
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
@@ -82,7 +82,7 @@ export default function Footer() {
 
         {/* Coluna 3: Endereço e Mapa */}
         <div>
-          <div className="pl-4 md:pt-2 md:pl-0">
+          <div className="pl-4 md:pt-6 md:pl-0">
             <h3 className="mb-1 text-lg font-semibold">Endereço</h3>
             <p className="mb-2">
               Av. Benedito Almeida Campos, esquina com R. Araguaia, Centro, Uruaçu-GO

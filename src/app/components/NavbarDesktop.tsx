@@ -32,7 +32,7 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
   };
 
   return (
-    <div className="hidden items-center space-x-6 xl:flex xl:text-2xl">
+    <div className="hidden items-center space-x-6 py-8 xl:flex xl:text-2xl">
       <Link href="/" className="text-dark hover:text-light-chocolate">
         Home
       </Link>
