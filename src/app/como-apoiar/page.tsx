@@ -76,7 +76,7 @@ export default function Page() {
                 Doar é simples e seguro! Escaneie o código QR com a câmera de seu celular para
                 realizar a sua doação via Pix. Se você deseja fazer a sua doação de outra forma,
                 clique no botão 'Quero Doar' e nos informe como gostaria de fazer a sua doação que
-                lhe passaremos as informações necessárias para ajudá-lo(a).
+                lhe passaremos as informações necessárias para ajudá-lo<span>(a)</span>.
               </p>
               <p>Juntos, podemos transformar vidas e preservar nossa história!</p>
             </div>
