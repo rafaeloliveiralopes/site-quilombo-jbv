@@ -8,7 +8,7 @@ const team = [
     image: '/equipe/foto-raiane.jpeg',
     bio: 'Lidero nossa comunidade com dedicação e compromisso, buscando sempre promover o fortalecimento das nossas tradições culturais, o desenvolvimento sustentável e a melhoria das condições de vida para todos os moradores. Minha atuação é focada na luta pelos direitos da comunidade quilombola e na busca de soluções que atendam às nossas necessidades, sem abrir mão da preservação das nossas raízes históricas e culturais. Como líder, me empenho para garantir um futuro mais justo e igualitário para todos.',
     socials: {
-      instagram: 'https://instagram.com',
+      instagram: 'https://www.instagram.com/rany_gouveia/',
     },
   },
   {
@@ -35,7 +35,7 @@ const team = [
     image: '/equipe/foto-domingas-goncalves.jpeg',
     bio: 'Sou Domingas Gouveia de Carvalho, conhecida como Domingas Quilombola. Sou pedagoga, ex-vereadora de Uruaçu (GO), ex-presidente da Comunidade Quilombola João Borges Vieira e atualmente atuo como coordenadora da CONAQ. Minha trajetória é marcada pela luta por moradia, educação e direitos das comunidades quilombolas, sempre com o compromisso de fortalecer nossa identidade e garantir justiça social.',
     socials: {
-      instagram: 'https://instagram.com',
+      instagram: 'https://www.instagram.com/domingasquilombola/',
     },
   },
   {
@@ -45,7 +45,7 @@ const team = [
     bio: 'Desenvolvedor Web e graduando em Engenharia de Software, venho explorando o universo do desenvolvimento web desde 2021. Além disso, iniciei em 2025 como desenvolvedor voluntário da Associação Comunitária Quilombola, implementando ferramentas digitais que otimizam processos e fortalecem a comunicação com a comunidade. Nas horas vagas, dedico-me à leitura e a assistir filmes e séries, atividades que estimulam minha criatividade e ampliam minha visão de mundo.',
     socials: {
       instagram: 'https://instagram.com',
-      linkedin: 'https://linkedin.com/in/rafael-lopes',
+      linkedin: 'https://www.instagram.com/rafaellopes.dev/',
     },
   },
 ];
