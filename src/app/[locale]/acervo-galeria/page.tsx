@@ -12,7 +12,7 @@ export default function Page() {
         {/* Imagem 01 */}
         <Image
           src="/galeria/img-acervo-01.png"
-          alt=""
+          alt="A presidente da Asociação Quilombola Urbana João Borges Vieira, Raiane Gouveia, em um evento de abertura da oficina de estudo das religiões de matrizes africanas."
           width={380}
           height={380}
           className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
@@ -20,7 +20,7 @@ export default function Page() {
         {/* Imagem 02 */}
         <Image
           src="/galeria/img-acervo-02.png"
-          alt=""
+          alt="Oficina de dança do tambor. A coordenadoras desaberes Domingas Quilombola com outra mulher tocando um tambor em um espaço cultural."
           width={380}
           height={380}
           className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
@@ -28,7 +28,7 @@ export default function Page() {
         {/* Imagem 03 */}
         <Image
           src="/galeria/img-acervo-03.png"
-          alt=""
+          alt="Oficina de turbantes e tranças a Segunda Semana da consciência negra."
           width={380}
           height={380}
           className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
@@ -36,7 +36,7 @@ export default function Page() {
         {/* Imagem 04 */}
         <Image
           src="/galeria/img-acervo-04.png"
-          alt=""
+          alt="Dia do empoderamento feminino. Mulheres quilombolas em um evento de empoderamento feminino e beleza da mulher negra."
           width={380}
           height={380}
           className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
@@ -44,7 +44,7 @@ export default function Page() {
         {/* Imagem 05 */}
         <Image
           src="/galeria/img-acervo-05.png"
-          alt=""
+          alt="Boneca negra artesanal com um vestido colorido em azul, verde, amarelo e vermelho."
           width={380}
           height={380}
           className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
@@ -52,7 +52,7 @@ export default function Page() {
         {/* Imagem 06 */}
         <Image
           src="/galeria/img-acervo-06.png"
-          alt=""
+          alt="Dia internacional da mulher negra, latina americana e caribenha. Uma mulher negra sorrindo de perfil e usando um turbante verde escuro com detalhes pretos."
           width={380}
           height={380}
           className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
@@ -60,7 +60,7 @@ export default function Page() {
         {/* Imagem 07 */}
         <Image
           src="/galeria/img-acervo-07.png"
-          alt=""
+          alt="Treinamento de capoeira em um ginásio esportivo."
           width={380}
           height={380}
           className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
@@ -68,7 +68,7 @@ export default function Page() {
         {/* Imagem 08 */}
         <Image
           src="/galeria/img-acervo-08.png"
-          alt=""
+          alt="Evento de fomento à cultura afro-brasileira nas escolas. Domingas Quilombola com um microfone fazendo o seu discurso de emponderamento da cultura afro-brasileira."
           width={380}
           height={380}
           className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
@@ -76,7 +76,7 @@ export default function Page() {
         {/* Imagem 09 */}
         <Image
           src="/galeria/img-acervo-09.png"
-          alt=""
+          alt="Time Quilombola pousando para foto após um campeonato de futebol."
           width={380}
           height={380}
           className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
@@ -84,7 +84,7 @@ export default function Page() {
         {/* Imagem 10 */}
         <Image
           src="/galeria/img-acervo-10.png"
-          alt=""
+          alt="Imagem da equipe de jogadores de futebol que participara da copa quilombola."
           width={380}
           height={380}
           className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
@@ -92,7 +92,7 @@ export default function Page() {
         {/* Imagem 11 */}
         <Image
           src="/galeria/img-acervo-11.png"
-          alt=""
+          alt="Pequenas bonecas artesanais negras dispostas lado a lado em uma janela."
           width={380}
           height={380}
           className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
@@ -100,7 +100,7 @@ export default function Page() {
         {/* Imagem 12 */}
         <Image
           src="/galeria/img-acervo-12.png"
-          alt=""
+          alt="Foto de evento em comemoração do dia das crianças na comunidade quilombola."
           width={380}
           height={380}
           className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
@@ -108,7 +108,7 @@ export default function Page() {
         {/* Imagem 13 */}
         <Image
           src="/galeria/img-acervo-13.png"
-          alt=""
+          alt="Bolsa artesanal com o desenho de uma mulher negra usando um trubante."
           width={380}
           height={380}
           className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
@@ -116,7 +116,7 @@ export default function Page() {
         {/* Imagem 14 */}
         <Image
           src="/galeria/img-acervo-14.png"
-          alt=""
+          alt="Foto da primeira semana da consciência negra."
           width={380}
           height={380}
           className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
@@ -124,7 +124,7 @@ export default function Page() {
         {/* Imagem 15 */}
         <Image
           src="/galeria/img-acervo-15.png"
-          alt=""
+          alt="Bolsa artesanal de pano com o rosto de uma boneca negra na frente."
           width={380}
           height={380}
           className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
@@ -132,7 +132,7 @@ export default function Page() {
         {/* Imagem 16 */}
         <Image
           src="/galeria/img-acervo-16.png"
-          alt=""
+          alt="Boneca negra artesanal usando um enfeite branco no cabelo e vestida com um vestido colorido nas cores verde, vermelha, amarela, laranja e detalhes em preto."
           width={380}
           height={380}
           className="mx-auto h-auto w-auto max-w-[90%] origin-center transform rounded-3xl shadow-lg transition-transform duration-300 hover:scale-110"
