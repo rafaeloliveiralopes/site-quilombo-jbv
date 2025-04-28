@@ -1,4 +1,5 @@
 import { getRequestConfig } from 'next-intl/server';
+import type { Messages } from 'next-intl';
 import { hasLocale } from 'next-intl';
 import { routing } from './routing';
 import fs from 'fs/promises';
@@ -11,7 +12,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const messagesDir = path.resolve(process.cwd(), 'messages', locale);
   const files = await fs.readdir(messagesDir);
 
-  const messages: Record<string, any> = {};
+  const messages: Messages = {};
   await Promise.all(
     files
       .filter((f) => f.endsWith('.json'))

@@ -8,22 +8,6 @@ import HowToSupport from './components/HowToSupport';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-interface ContentType {
-  hero: {
-    title: string;
-    description: string;
-    image: { src: string; alt: string };
-  };
-  actions: {
-    title: string;
-    cards: { icon: string; alt: string; text: string }[];
-  };
-  news: {
-    title: string;
-    cards: { title: string; text: string; link: string }[];
-  };
-}
-
 export default function Home() {
   //------------ Animações (Início) -------------//
 
