@@ -48,7 +48,7 @@ export default function Form() {
     setPendingSubmission(true);
 
     try {
-      // 1️⃣ armazena o retorno
+      // Armazena o retorno
       const res = await fetch('/api/sendEmail', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -57,15 +57,15 @@ export default function Form() {
           phone: formData.phone,
           email: formData.email,
           subject: formData.subject,
-          message: formData.contactMessage, //  <- chave certa
+          message: formData.contactMessage,
         }),
         next: { revalidate: 0 },
       });
 
-      // 2️⃣ valida
+      // Valida
       if (!res.ok) throw new Error('Erro ao enviar a mensagem.');
 
-      // zera o formulário, exibe modal de sucesso etc.
+      // zera o formulário, exibe modal de sucesso.
       setFormData({
         contactName: '',
         phone: '',
