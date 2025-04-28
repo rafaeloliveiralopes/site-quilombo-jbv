@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+
 interface NavbarMobileProps {
   isSubMenuOpen: boolean;
   setIsSubMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -16,6 +18,8 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
   setIsAcervoSubMenuOpen,
   setIsMenuOpen,
 }) => {
+  const t = useTranslations('navigation');
+
   const handleSubMenuToggle = () => {
     setIsSubMenuOpen((prev) => {
       if (!prev) setIsAcervoSubMenuOpen(false);
@@ -36,7 +40,11 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
       style={{ height: '100vh' }}
     >
       {/* Logo da associação */}
-      <Link href="/" className="flex justify-center max-[640px]:pb-8">
+      <Link
+        href="/"
+        className="flex justify-center max-[640px]:pb-8"
+        onClick={() => setIsMenuOpen(false)}
+      >
         <Image
           src="/logo-associacao-quilombola-joao-borges-vieira.png"
           alt="Logo"
@@ -44,7 +52,6 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
           height={96}
           style={{ width: 'auto', height: 'auto' }}
           priority
-          onClick={() => setIsMenuOpen(false)}
         />
       </Link>
 
@@ -52,7 +59,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
       <button
         type="button"
         className="absolute top-4 right-4 text-gray-700 focus:ring-2 focus:ring-gray-300 focus:outline-none active:text-black"
-        aria-label="Close menu"
+        aria-label="Fechar menu"
         onClick={() => setIsMenuOpen(false)}
       >
         <svg
@@ -77,15 +84,16 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
         className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
         onClick={() => setIsMenuOpen(false)}
       >
-        Home
+        {t('home')}
       </Link>
+
       <div>
         <button
           type="button"
           className="text-dark flex w-full items-center justify-between text-left transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
           onClick={handleSubMenuToggle}
         >
-          Sobre Nós
+          {t('about')}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className={`mr-[3rem] h-4 w-4 transform transition-transform ${
@@ -98,6 +106,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
           </svg>
         </button>
+
         {isSubMenuOpen && (
           <div className="ml-4 space-y-2">
             <Link
@@ -105,32 +114,33 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
               onClick={() => setIsMenuOpen(false)}
             >
-              Nossa História
+              {t('ourHistory')}
             </Link>
             <Link
               href="/nosso-trabalho"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
               onClick={() => setIsMenuOpen(false)}
             >
-              Nosso Trabalho
+              {t('ourWork')}
             </Link>
             <Link
               href="/nossa-equipe"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
               onClick={() => setIsMenuOpen(false)}
             >
-              Nossa Equipe
+              {t('ourTeam')}
             </Link>
           </div>
         )}
       </div>
+
       <div>
         <button
           type="button"
           className="text-dark flex w-full items-center justify-between text-left transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
           onClick={handleAcervoSubMenuToggle}
         >
-          Acervo
+          {t('collection')}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className={`mr-[5rem] h-4 w-4 transform transition-transform ${
@@ -143,6 +153,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
           </svg>
         </button>
+
         {isAcervoSubMenuOpen && (
           <div className="ml-4 space-y-2">
             <Link
@@ -150,32 +161,34 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
               onClick={() => setIsMenuOpen(false)}
             >
-              Galeria de Imagens
+              {t('gallery')}
             </Link>
             <Link
               href="/acervo-videos"
               className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
               onClick={() => setIsMenuOpen(false)}
             >
-              Vídeos
+              {t('videos')}
             </Link>
           </div>
         )}
       </div>
+
       <Link
         href="/contato"
         className="text-dark block transition-all duration-300 focus:outline-none active:scale-105 active:text-white"
         onClick={() => setIsMenuOpen(false)}
       >
-        Contato
+        {t('contact')}
       </Link>
+
       <Link
         href="/como-apoiar"
         className="bg-green mt-8 flex w-full items-center justify-center rounded-full py-4 text-2xl font-[400] text-white transition-all duration-300 focus:outline-none active:scale-105 active:bg-green-600"
-        aria-label="Quero Doar"
+        aria-label={t('donateButton.ariaLabel')}
         onClick={() => setIsMenuOpen(false)}
       >
-        Quero Doar!
+        {t('donateButton.label')}
       </Link>
     </div>
   );

@@ -1,6 +1,8 @@
 'use client';
+
 import { useState } from 'react';
-import HowToSupport from '../components/HowToSupport';
+import { useTranslations } from 'next-intl';
+import HowToSupport from '@/app/[locale]/components/HowToSupport';
 
 // Links para os vídeos no YouTube
 const videos = [
@@ -18,14 +20,13 @@ const videos = [
 ];
 
 export default function VideosPage() {
-  // Estado que controla quantos vídeos estão visíveis (iniciando com 3)
+  const t = useTranslations('videos');
+
   const [visibleCount, setVisibleCount] = useState(3);
 
-  // Função para carregar mais vídeos (neste caso, +2)
   const handleLoadMore = () => {
     setVisibleCount((prevCount) => {
       const newCount = prevCount + 2;
-      // Evita exceder o total de vídeos
       return newCount <= videos.length ? newCount : videos.length;
     });
   };
@@ -33,7 +34,7 @@ export default function VideosPage() {
   return (
     <>
       <div className="bg-chocolate text-snow w-full px-6 py-6 text-2xl tracking-tight md:text-4xl xl:pl-14 2xl:pl-46">
-        <h1>Vídeos</h1>
+        <h1>{t('pageTitle')}</h1>
       </div>
 
       {/* Seção de Vídeos */}
@@ -44,21 +45,21 @@ export default function VideosPage() {
               src={video}
               allowFullScreen={false}
               loading="lazy"
-              title={`Vídeo ${idx + 1} - Associação Quilombola João Borges Vieira`}
+              title={`${t('videoTitlePrefix')} ${idx + 1} - Associação Quilombola João Borges Vieira`}
               className="aspect-video w-full rounded-xl"
             />
           </div>
         ))}
       </section>
 
-      {/* Botão para carregar mais vídeos (apenas se ainda houver vídeos a exibir) */}
+      {/* Botão para carregar mais vídeos */}
       {visibleCount < videos.length && (
         <div className="mx-auto mb-8 flex max-w-6xl justify-center">
           <button
             onClick={handleLoadMore}
             className="bg-chocolate text-snow cursor-pointer rounded-lg px-6 py-3 hover:bg-amber-800 md:text-xl"
           >
-            Carregar mais
+            {t('loadMore')}
           </button>
         </div>
       )}
