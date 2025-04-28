@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import HowToSupport from '../components/HowToSupport';
+import HowToSupport from '@/app/[locale]/components/HowToSupport';
 
 // Links para os vídeos no YouTube
 const videos = [
