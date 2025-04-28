@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 interface NavbarDesktopProps {
   isSubMenuOpen: boolean;
@@ -15,26 +16,27 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
   isAcervoSubMenuOpen,
   setIsAcervoSubMenuOpen,
 }) => {
+  const t = useTranslations('navigation');
   const [submenuTimer, setSubmenuTimer] = useState<NodeJS.Timeout | null>(null);
 
   const handleMouseEnter = (setOpen: React.Dispatch<React.SetStateAction<boolean>>) => {
     if (submenuTimer) {
-      clearTimeout(submenuTimer); // Limpa o timer se o mouse entrar novamente antes do atraso
+      clearTimeout(submenuTimer);
     }
     setOpen(true);
   };
 
   const handleMouseLeave = (setOpen: React.Dispatch<React.SetStateAction<boolean>>) => {
     const timer = setTimeout(() => {
-      setOpen(false); // Fecha o submenu após o atraso
-    }, 300); // Atraso de 300ms
+      setOpen(false);
+    }, 300);
     setSubmenuTimer(timer);
   };
 
   return (
     <div className="hidden items-center space-x-6 py-8 xl:flex xl:text-2xl">
       <Link href="/" className="text-dark hover:text-light-chocolate">
-        Home
+        {t('home')}
       </Link>
       <div
         className="group relative"
@@ -45,7 +47,7 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
           type="button"
           className="text-dark hover:text-light-chocolate flex items-center focus:outline-none"
         >
-          Sobre Nós
+          {t('about')}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className={`ml-2 h-4 w-4 transform transition-transform ${
@@ -68,19 +70,19 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
             href="/nossa-historia"
             className="text-dark hover:bg-light-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
-            Nossa História
+            {t('ourHistory')}
           </Link>
           <Link
             href="/nosso-trabalho"
             className="text-dark hover:bg-orange block px-4 py-2 hover:text-black xl:text-2xl"
           >
-            Nosso Trabalho
+            {t('ourWork')}
           </Link>
           <Link
             href="/nossa-equipe"
             className="text-dark hover:bg-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
-            Nossa Equipe
+            {t('ourTeam')}
           </Link>
         </div>
       </div>
@@ -93,7 +95,7 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
           type="button"
           className="text-dark hover:text-light-chocolate flex items-center focus:outline-none"
         >
-          Acervo
+          {t('collection')}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className={`ml-2 h-4 w-4 transform transition-transform ${
@@ -116,26 +118,26 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
             href="/acervo-galeria"
             className="text-dark hover:bg-light-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
-            Galeria de Imagens
+            {t('gallery')}
           </Link>
           <Link
             href="/acervo-videos"
             className="text-dark hover:bg-chocolate block px-4 py-2 hover:text-black xl:text-2xl"
           >
-            Vídeos
+            {t('videos')}
           </Link>
         </div>
       </div>
       <Link href="/como-apoiar" className="text-dark hover:text-light-chocolate">
-        Como Apoiar
+        {t('howToSupport')}
       </Link>
       <Link href="/contato" className="text-dark hover:text-light-chocolate">
-        Contato
+        {t('contact')}
       </Link>
       <Link href="/como-apoiar" className="flex items-center justify-center">
         <Image
           src="/icons/donation-icon-line-black.svg"
-          alt="Doação"
+          alt={t('donate')}
           width={46}
           height={46}
           className="w-8 md:h-8"
