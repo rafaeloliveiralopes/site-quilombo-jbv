@@ -1,8 +1,12 @@
 'use client';
+
 import React, { useState, ChangeEvent, FormEvent } from 'react';
+import { useTranslations } from 'next-intl';
 import { contactFormSchema, ContactFormData } from '../contato/validation/formSchema';
 
 export default function Form() {
+  const t = useTranslations('form');
+
   const [formData, setFormData] = useState<ContactFormData>({
     contactName: '',
     phone: '',
@@ -44,14 +48,24 @@ export default function Form() {
     setPendingSubmission(true);
 
     try {
-      const response = await fetch('/api/sendEmail', {
+      // 1️⃣ armazena o retorno
+      const res = await fetch('/api/sendEmail', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          name: formData.contactName,
+          phone: formData.phone,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.contactMessage, //  <- chave certa
+        }),
+        next: { revalidate: 0 },
       });
 
-      if (!response.ok) throw new Error('Erro ao enviar a mensagem.');
+      // 2️⃣ valida
+      if (!res.ok) throw new Error('Erro ao enviar a mensagem.');
 
+      // zera o formulário, exibe modal de sucesso etc.
       setFormData({
         contactName: '',
         phone: '',
@@ -59,10 +73,9 @@ export default function Form() {
         subject: '',
         contactMessage: '',
       });
-
       setShowSuccessModal(true);
     } catch (error) {
-      alert('Houve um problema ao enviar a mensagem. Por favor, tente novamente.');
+      alert(t('errorAlert'));
       console.error(error);
     } finally {
       setPendingSubmission(false);
@@ -75,11 +88,11 @@ export default function Form() {
         onSubmit={handleSubmit}
         className="bg-light-chocolate mx-auto max-w-md rounded-2xl px-4 py-9 lg:px-10"
       >
-        <h2 className="mb-6 text-center text-lg lg:text-2xl">FORMULÁRIO PARA CONTATO</h2>
+        <h2 className="mb-6 text-center text-lg lg:text-2xl">{t('formTitle')}</h2>
 
         <div className="mb-4">
           <label htmlFor="contactName" className="mb-1 block">
-            Nome
+            {t('fields.name')}
           </label>
           <input
             type="text"
@@ -94,10 +107,9 @@ export default function Form() {
             <p className="mt-1 text-sm text-white">{formErrors.contactName}</p>
           )}
         </div>
-
         <div className="mb-4">
           <label htmlFor="phone" className="mb-1 block">
-            Telefone
+            {t('fields.phone')}
           </label>
           <input
             type="tel"
@@ -110,10 +122,9 @@ export default function Form() {
           />
           {formErrors.phone && <p className="mt-1 text-sm text-white">{formErrors.phone}</p>}
         </div>
-
         <div className="mb-4">
           <label htmlFor="email" className="mb-1 block">
-            Email
+            {t('fields.email')}
           </label>
           <input
             type="email"
@@ -126,10 +137,9 @@ export default function Form() {
           />
           {formErrors.email && <p className="mt-1 text-sm text-white">{formErrors.email}</p>}
         </div>
-
         <div className="mb-4">
           <label htmlFor="subject" className="mb-1 block">
-            Assunto
+            {t('fields.subject')}
           </label>
           <input
             type="text"
@@ -142,10 +152,9 @@ export default function Form() {
           />
           {formErrors.subject && <p className="mt-1 text-sm text-white">{formErrors.subject}</p>}
         </div>
-
         <div className="mb-6">
           <label htmlFor="message" className="mb-1 block">
-            Mensagem
+            {t('fields.message')}
           </label>
           <textarea
             id="message"
@@ -160,7 +169,6 @@ export default function Form() {
             <p className="mt-1 text-sm text-white">{formErrors.contactMessage}</p>
           )}
         </div>
-
         <button
           type="submit"
           disabled={pendingSubmission}
@@ -173,51 +181,44 @@ export default function Form() {
           {pendingSubmission && (
             <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
           )}
-          {pendingSubmission ? 'Enviando...' : 'Enviar'}
+          {pendingSubmission ? t('submitButton.sending') : t('submitButton.send')}
         </button>
       </form>
-
       {/* Modal de Consentimento */}
       {showModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
           <div className="mx-4 max-w-md rounded-lg bg-white p-6 text-zinc-800 shadow-lg">
-            <h2 className="mb-2 text-lg font-semibold">Aviso de Privacidade</h2>
-            <p className="text-sm">
-              Ao enviar este formulário, você concorda que seus dados serão utilizados apenas para
-              retorno do contato.
-            </p>
+            <h2 className="mb-2 text-lg font-semibold">{t('privacyModal.title')}</h2>
+            <p className="text-sm">{t('privacyModal.description')}</p>
             <div className="mt-4 flex justify-end gap-3">
               <button
                 onClick={() => setShowModal(false)}
                 className="rounded-md border border-zinc-400 px-4 py-2 text-zinc-800 hover:bg-zinc-200"
               >
-                Cancelar
+                {t('privacyModal.cancel')}
               </button>
               <button
                 onClick={confirmAndSend}
                 className="rounded-md bg-orange-400 px-4 py-2 text-white hover:bg-orange-500"
               >
-                Entendi e Enviar
+                {t('privacyModal.confirm')}
               </button>
             </div>
           </div>
         </div>
       )}
-
-      {/* Modal de Confirmação de Sucesso */}
+      {/* Modal de Sucesso */}
       {showSuccessModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
           <div className="mx-4 max-w-md rounded-lg bg-white p-6 text-zinc-800 shadow-lg">
-            <h2 className="mb-2 text-lg font-semibold">Tudo certo!</h2>
-            <p className="text-sm">
-              Sua mensagem foi enviada com sucesso. Em breve entraremos em contato.
-            </p>
+            <h2 className="mb-2 text-lg font-semibold">{t('successModal.title')}</h2>
+            <p className="text-sm">{t('successModal.description')}</p>
             <div className="mt-4 flex justify-end">
               <button
                 onClick={() => setShowSuccessModal(false)}
                 className="rounded-md bg-orange-400 px-4 py-2 text-white hover:bg-orange-500"
               >
-                Fechar
+                {t('successModal.close')}
               </button>
             </div>
           </div>
