@@ -1,10 +1,14 @@
 'use client';
+
 import Link from 'next/link';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect, useRef } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function HowToSupport() {
+  const t = useTranslations('howToSupport');
+
   const supportTitleRef = useRef<HTMLHeadingElement>(null);
   const supportTextRef = useRef<HTMLParagraphElement>(null);
   const supportButtonRef = useRef<HTMLAnchorElement>(null);
@@ -67,21 +71,18 @@ export default function HowToSupport() {
         ref={supportTitleRef}
         className="text-dark decoration-orange mb-4 text-center text-2xl font-bold underline md:mb-4 md:text-3xl"
       >
-        COMO APOIAR?
+        {t('sectionTitle')}
       </h2>
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-2 md:flex-row md:items-start">
         <p ref={supportTextRef} className="text-dark text-base md:flex-1 md:text-lg">
-          A Comunidade Quilombola Urbana João Borges Vieira é um símbolo de{' '}
-          <strong>resistência, cultura e história</strong>. Para fortalecer nossas ações e garantir
-          que nossos projetos continuem transformando vidas, contamos com o apoio de pessoas e
-          organizações que acreditam na nossa causa.
+          {t('description')}
         </p>
         <Link
           ref={supportButtonRef}
           href="/como-apoiar"
           className="bg-green text-dark inline-block rounded-full px-6 py-3 text-base font-medium transition hover:bg-green-600 md:text-lg"
         >
-          Faça Sua Doação
+          {t('donateButton')}
         </Link>
       </div>
     </section>
