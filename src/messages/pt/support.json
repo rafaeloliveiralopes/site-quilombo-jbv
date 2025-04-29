@@ -1,0 +1,23 @@
+{
+  "pageTitle": "Como Apoiar",
+  "mainTitle": "Apoie a Associação Quilombola Urbana João Borges Vieira!",
+  "mainParagraphs": [
+    "A Associação Quilombola Urbana João Borges Vieira é um símbolo de resistência e luta pela valorização da cultura e dos direitos quilombolas. Nosso trabalho visa fortalecer a identidade da comunidade, promover inclusão social e criar oportunidades que garantam a autonomia e o bem-estar de seus membros.",
+    "Contribuir financeiramente com nossa associação é abraçar essa causa e reconhecer a importância da preservação cultural e do fortalecimento comunitário."
+  ],
+  "whySupportTitle": "Por que apoiar?",
+  "whySupportIntro": "Seu apoio é essencial para que possamos continuar desenvolvendo ações que beneficiam diretamente nossa comunidade. Com sua contribuição, poderemos:",
+  "whySupportList": {
+    "item1": "Promover atividades culturais e educacionais, garantindo que a história e as tradições quilombolas sejam preservadas e transmitidas às futuras gerações.",
+    "item2": "Fomentar o desenvolvimento social e econômico, oferecendo capacitação profissional e oportunidades de geração de renda para os moradores.",
+    "item3": "Fortalecer a incidência política e a defesa de direitos, assegurando que a voz da comunidade seja respeitada e suas demandas sejam atendidas.",
+    "item4": "Realizar pesquisas e produzir materiais educativos, ampliando o acesso à informação e fortalecendo nossa luta por justiça e equidade."
+  },
+  "howToContributeTitle": "Como contribuir?",
+  "howToContributeParagraphs": [
+    "No Brasil, muitas organizações sem fins lucrativos dependem de financiamentos governamentais e privados para manter suas atividades. No entanto, a doação individual permite que qualquer pessoa faça parte dessa transformação.",
+    "Doar é simples e seguro! Escaneie o código QR com a câmera de seu celular para realizar a sua doação via Pix. Se você deseja fazer a sua doação de outra forma, clique no botão \"Quero Doar\" e nos informe como gostaria de fazer a sua doação que lhe passaremos as informações necessárias para ajudá-lo(a).",
+    "Juntos, podemos transformar vidas e preservar nossa história!"
+  ],
+  "donateButton": "Quero Doar"
+}

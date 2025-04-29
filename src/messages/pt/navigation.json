@@ -1,0 +1,23 @@
+{
+  "home": "Home",
+  "about": "Sobre Nós",
+  "ourHistory": "Nossa História",
+  "ourWork": "Nosso Trabalho",
+  "ourTeam": "Nossa Equipe",
+  "collection": "Acervo",
+  "gallery": "Galeria de Imagens",
+  "videos": "Vídeos",
+  "howToSupport": "Como Apoiar",
+  "contact": "Contato",
+  "donate": "Faça Sua Doação",
+  "siteMap": "Mapa do site",
+  "privacyPolicy": "Política de Privacidade",
+  "followUs": "Siga-nos nas Redes Sociais",
+  "addressTitle": "Endereço",
+  "addressContent": "Av. Benedito Almeida Campos, esquina com R. Araguaia, Centro, Uruaçu-GO",
+  "rightsReserved": "Todos os Direitos Reservados 2025 | Desenvolvido por",
+  "donateButton": {
+    "label": "Quero Doar!",
+    "ariaLabel": "Quero Doar"
+  }
+}
