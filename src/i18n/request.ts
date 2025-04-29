@@ -9,7 +9,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const requested = await requestLocale;
   const locale = hasLocale(routing.locales, requested) ? requested : routing.defaultLocale;
 
-  const messagesDir = path.resolve(process.cwd(), 'messages', locale);
+  const messagesDir = path.resolve(process.cwd(), 'src', 'messages', locale);
   const files = await fs.readdir(messagesDir);
 
   const messages: Messages = {};
