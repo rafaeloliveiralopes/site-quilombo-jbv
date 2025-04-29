@@ -2,7 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import { getMessages } from 'next-intl/server';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
+
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 
@@ -23,10 +25,13 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
+  const messages = await getMessages({ locale });
+
   return (
-    <html lang="pt-BR">
-      <body className={`bg-snow antialiased`}>
-        <NextIntlClientProvider>
+    <html lang={locale}>
+      <body className="bg-snow antialiased">
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
           <main className="mx-auto w-full flex-1 overflow-x-hidden">{children}</main>
           <Footer />
