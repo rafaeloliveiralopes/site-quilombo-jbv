@@ -71,7 +71,11 @@ export default function Footer() {
         <div className="pl-3 md:pt-6 md:pl-0">
           <h3 className="mb-1 text-lg font-semibold">{t('followUs')}</h3>
           <div className="flex space-x-4">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/quilombojoaoborgesvieira/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fa-brands fa-instagram text-orange text-2xl"></i>
             </a>
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
