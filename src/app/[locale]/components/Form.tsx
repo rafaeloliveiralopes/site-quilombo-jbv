@@ -53,7 +53,7 @@ export default function Form() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          name: formData.contactName,
+          contactName: formData.contactName,
           phone: formData.phone,
           email: formData.email,
           subject: formData.subject,
