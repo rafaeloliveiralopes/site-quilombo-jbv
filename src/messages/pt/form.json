@@ -22,5 +22,5 @@
     "description": "Sua mensagem foi enviada com sucesso. Em breve entraremos em contato.",
     "close": "Fechar"
   },
-  "errorAlert": "Houve um problema ao enviar a mensagem. Por favor, tente novamente."
+  "errorAlert": "Houve um problema ao enviar a mensagem. Por favor, tente novamente mais tarde."
 }
