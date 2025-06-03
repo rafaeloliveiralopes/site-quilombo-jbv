@@ -17,11 +17,11 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <Link href="/">
             <Image
-              src="/logo-associacao-quilombola-joao-borges-vieira.png"
+              src="/logo-associacao-quilombo-joao-borges-vieira-fundo-transparente.png"
               alt="Logo Associação Comunidade Quilombola"
-              width={120}
-              height={120}
-              className="py-3"
+              width={125}
+              height={125}
+              className="py-0"
               style={{ width: 'auto', height: 'auto' }}
             />
           </Link>
