@@ -46,7 +46,7 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
         onClick={() => setIsMenuOpen(false)}
       >
         <Image
-          src="/logo-associacao-quilombola-joao-borges-vieira.png"
+          src="/logo-associacao-quilombo-joao-borges-vieira-fundo-transparente.png"
           alt="Logo"
           width={96}
           height={96}
