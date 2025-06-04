@@ -30,6 +30,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        <link rel="icon" href="/favicon.ico" type="image/ico" />
+      </head>
       <body className="bg-snow antialiased">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
