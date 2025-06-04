@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="pl-3 md:pl-0">
           <Link href="/">
             <Image
-              src="/logo-white-text.png"
+              src="/logo-associacao-quilombo-joao-borges-vieira-fundo-transparente.png"
               alt="Logo Associação Comunidade Quilombola"
               width={120}
               height={120}
