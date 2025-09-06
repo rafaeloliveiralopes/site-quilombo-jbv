@@ -1,6 +1,6 @@
 import { createNavigation } from 'next-intl/navigation';
 import { routing } from './routing';
 
-// Lightweight wrappers around Next.js' navigation
-// APIs that consider the routing configuration
+// Wrappers leves em torno das APIs de navegação do Next.js
+// que consideram a configuração de rotas
 export const { Link, redirect, usePathname, useRouter, getPathname } = createNavigation(routing);
