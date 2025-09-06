@@ -1,0 +1,26 @@
+{
+  "formTitle": "FORMULARIO DE CONTACTO",
+  "fields": {
+    "name": "Nombre",
+    "phone": "Teléfono",
+    "email": "Email",
+    "subject": "Asunto",
+    "message": "Mensaje"
+  },
+  "submitButton": {
+    "sending": "Enviando...",
+    "send": "Enviar"
+  },
+  "privacyModal": {
+    "title": "Aviso de Privacidad",
+    "description": "Al enviar este formulario, aceptas que tus datos serán utilizados únicamente para responder el contacto.",
+    "cancel": "Cancelar",
+    "confirm": "Entendido y Enviar"
+  },
+  "successModal": {
+    "title": "¡Todo listo!",
+    "description": "Tu mensaje fue enviado con éxito. Pronto nos pondremos en contacto.",
+    "close": "Cerrar"
+  },
+  "errorAlert": "Hubo un problema al enviar el mensaje. Por favor, inténtalo de nuevo más tarde."
+}

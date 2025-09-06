@@ -1,0 +1,30 @@
+{
+  "pageTitle": "Nuestro Equipo",
+  "members": {
+    "raiane": {
+      "name": "Raiane Gouveia",
+      "role": "Presidenta",
+      "bio": "Lidero nuestra comunidad con dedicación y compromiso, buscando siempre promover el fortalecimiento de nuestras tradiciones culturales, el desarrollo sostenible y la mejora de las condiciones de vida para todos los residentes. Mi actuación se enfoca en la lucha por los derechos de la comunidad quilombola y en la búsqueda de soluciones que atiendan nuestras necesidades, sin renunciar a la preservación de nuestras raíces históricas y culturales. Como líder, me esfuerzo para garantizar un futuro más justo e igualitario para todos."
+    },
+    "karoline": {
+      "name": "Karoline Souza",
+      "role": "Coordinadora de Proyectos",
+      "bio": "Conferencista y creadora de proyectos en la comunidad Quilombola, con formación en Letras Lingüística, Licenciatura en Letras Portugués y actualmente estudiante de Derecho en la Universidad Estatal de Goiás. A lo largo de mi trayectoria, me he dedicado a crear e implementar proyectos que promueven la educación, la cultura y el fortalecimiento de nuestra comunidad. Mis conferencias e iniciativas buscan incentivar el protagonismo de la juventud quilombola y destacar la importancia de nuestras tradiciones y la preservación de nuestra historia. Creo que la educación y el intercambio de conocimientos son herramientas esenciales para el empoderamiento y el desarrollo sostenible de las comunidades tradicionales."
+    },
+    "stefany": {
+      "name": "Sthéfany",
+      "role": "Secretaria Ejecutiva",
+      "bio": "Estudiante de Tecnología en Agronomía, con experiencia en áreas administrativas y apoyo a comunidades tradicionales. Formo parte de la comunidad quilombola desde septiembre de 2023, donde busco contribuir de forma organizada y eficaz. Creo en el equilibrio entre trabajo serio y en constante evolución, tanto profesional como personal."
+    },
+    "domingas": {
+      "name": "Domingas Quilombola",
+      "role": "Coordinadora de Saberes y Tradición",
+      "bio": "Soy Domingas Gouveia de Carvalho, conocida como Domingas Quilombola. Soy pedagoga, ex-concejala de Uruaçu (GO), ex-presidenta de la Comunidad Quilombola João Borges Vieira y actualmente actúo como coordinadora de CONAQ. Mi trayectoria está marcada por la lucha por vivienda, educación y derechos de las comunidades quilombolas, siempre con el compromiso de fortalecer nuestra identidad y garantizar justicia social."
+    },
+    "rafael": {
+      "name": "Rafael Lopes",
+      "role": "Desarrollador Voluntario",
+      "bio": "Desarrollador Web y estudiante de Ingeniería de Software, vengo explorando el universo del desarrollo web desde 2021. Además, inicié en 2025 como desarrollador voluntario de la Asociación Comunitaria Quilombola, implementando herramientas digitales que optimizan procesos y fortalecen la comunicación con la comunidad. En las horas libres, me dedico a la lectura y a ver películas y series, actividades que estimulan mi creatividad y amplían mi visión del mundo."
+    }
+  }
+}

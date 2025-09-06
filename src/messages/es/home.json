@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "title": "LUCHA POR DERECHOS",
+    "description": "Desde 2007, la Asociación de la Comunidad Quilombola Urbana João Borges Vieira actúa para garantizar vivienda, educación, cultura y dignidad a las más de 700 familias quilombolas de la región.",
+    "image": {
+      "src": "/imagem-associacao-quilombo-urbano-joao-borges-vieira.png",
+      "alt": "Foto de la Asociación Comunidad Quilombola João Borges Vieira"
+    }
+  },
+  "actions": {
+    "title": "FRENTES DE ACTUACIÓN",
+    "cards": [
+      {
+        "icon": "/icons/home-svgrepo-com.svg",
+        "alt": "Icono de vivienda",
+        "text": "La asociación ha sido fundamental en la conquista de viviendas dignas para la comunidad."
+      },
+      {
+        "icon": "/icons/art-palette-svgrepo-com.svg",
+        "alt": "Icono de cultura",
+        "text": "Preservando y promoviendo las tradiciones culturales, la asociación organiza actividades como la danza del tambor."
+      },
+      {
+        "icon": "/icons/care-donation-svgrepo-com.svg",
+        "alt": "Icono de apoyo",
+        "text": "La asociación ofrece apoyo a las familias en vulnerabilidad, facilitando el acceso a programas sociales."
+      }
+    ]
+  },
+  "news": {
+    "title": "ÚLTIMAS NOTICIAS",
+    "learnMore": "Saber más",
+    "cards": [
+      {
+        "title": "Noticia 01",
+        "text": "Pronto tendremos más información sobre nuestras acciones.",
+        "link": "#"
+      },
+      {
+        "title": "Noticia 02",
+        "text": "Pronto tendremos más información sobre nuestras acciones.",
+        "link": "#"
+      },
+      {
+        "title": "Noticia 03",
+        "text": "Pronto tendremos más información sobre nuestras acciones.",
+        "link": "#"
+      }
+    ]
+  }
+}

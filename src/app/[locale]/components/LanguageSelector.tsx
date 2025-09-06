@@ -26,6 +26,11 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ variant = 'default'
       name: 'English',
       flag: '/flags/usa.svg',
     },
+    {
+      code: 'es',
+      name: 'Español',
+      flag: '/flags/spain.svg',
+    },
   ];
 
   const currentLanguage = languages.find((lang) => lang.code === locale) || languages[0];
