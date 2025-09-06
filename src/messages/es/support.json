@@ -1,0 +1,23 @@
+{
+  "pageTitle": "Cómo Apoyar",
+  "mainTitle": "¡Apoya a la Asociación Quilombola Urbana João Borges Vieira!",
+  "mainParagraphs": [
+    "La Asociación Quilombola Urbana João Borges Vieira es un símbolo de resistencia y lucha por la valorización de la cultura y los derechos quilombolas. Nuestro trabajo busca fortalecer la identidad de la comunidad, promover inclusión social y crear oportunidades que garanticen la autonomía y el bienestar de sus miembros.",
+    "Contribuir financieramente con nuestra asociación es abrazar esta causa y reconocer la importancia de la preservación cultural y el fortalecimiento comunitario."
+  ],
+  "whySupportTitle": "¿Por qué apoyar?",
+  "whySupportIntro": "Tu apoyo es esencial para que podamos continuar desarrollando acciones que benefician directamente nuestra comunidad. Con tu contribución, podremos:",
+  "whySupportList": {
+    "item1": "Promover actividades culturales y educacionales, garantizando que la historia y las tradiciones quilombolas sean preservadas y transmitidas a las futuras generaciones.",
+    "item2": "Fomentar el desarrollo social y económico, ofreciendo capacitación profesional y oportunidades de generación de ingresos para los residentes.",
+    "item3": "Fortalecer la incidencia política y la defensa de derechos, asegurando que la voz de la comunidad sea respetada y sus demandas sean atendidas.",
+    "item4": "Realizar investigaciones y producir materiales educativos, ampliando el acceso a la información y fortaleciendo nuestra lucha por justicia y equidad."
+  },
+  "howToContributeTitle": "¿Cómo contribuir?",
+  "howToContributeParagraphs": [
+    "En Brasil, muchas organizaciones sin fines de lucro dependen de financiamientos gubernamentales y privados para mantener sus actividades. Sin embargo, la donación individual permite que cualquier persona forme parte de esta transformación.",
+    "Si deseas hacer tu donación de otra forma, haz clic en el botón \"Quiero Donar\" e infórmanos cómo te gustaría hacer tu donación y te proporcionaremos la información necesaria para ayudarte.",
+    "¡Juntos, podemos transformar vidas y preservar nuestra historia!"
+  ],
+  "donateButton": "Quiero Donar"
+}
