@@ -29,6 +29,7 @@
   },
   "news": {
     "title": "LATEST NEWS",
+    "learnMore": "Learn more",
     "cards": [
       {
         "title": "News 01",

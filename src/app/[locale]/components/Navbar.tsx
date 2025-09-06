@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import NavbarDesktop from './NavbarDesktop';
 import NavbarMobile from './NavbarMobile';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

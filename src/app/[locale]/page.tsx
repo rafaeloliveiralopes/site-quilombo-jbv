@@ -3,7 +3,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import HowToSupport from './components/HowToSupport';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -192,7 +192,7 @@ export default function Home() {
                   href={t(`news.cards.${i}.link`)}
                   className="bg-orange text-dark rounded-full px-7 py-3 text-base font-medium hover:bg-orange-300 focus:ring-4 focus:ring-orange-500 focus:outline-none md:inline-flex md:items-center md:py-2 md:text-lg"
                 >
-                  Saiba mais
+                  {t('news.learnMore')}
                 </Link>
               </div>
             ))}
