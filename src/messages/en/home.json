@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "title": "FIGHTING FOR RIGHTS",
+    "description": "Since 2007, the Urban Quilombola Community Association João Borges Vieira has been working to guarantee housing, education, culture and dignity for more than 700 quilombola families in the region.",
+    "image": {
+      "src": "/imagem-associacao-quilombo-urbano-joao-borges-vieira.png",
+      "alt": "Photo of the João Borges Vieira Quilombola Community Association"
+    }
+  },
+  "actions": {
+    "title": "AREAS OF ACTION",
+    "cards": [
+      {
+        "icon": "/icons/home-svgrepo-com.svg",
+        "alt": "Housing icon",
+        "text": "The association has been fundamental in achieving decent housing for the community."
+      },
+      {
+        "icon": "/icons/art-palette-svgrepo-com.svg",
+        "alt": "Culture icon",
+        "text": "Preserving and promoting cultural traditions, the association organizes activities such as drum dancing."
+      },
+      {
+        "icon": "/icons/care-donation-svgrepo-com.svg",
+        "alt": "Support icon",
+        "text": "The association provides support to vulnerable families, facilitating access to social programs."
+      }
+    ]
+  },
+  "news": {
+    "title": "LATEST NEWS",
+    "cards": [
+      {
+        "title": "News 01",
+        "text": "Soon we will have more information about our actions.",
+        "link": "#"
+      },
+      {
+        "title": "News 02",
+        "text": "Soon we will have more information about our actions.",
+        "link": "#"
+      },
+      {
+        "title": "News 03",
+        "text": "Soon we will have more information about our actions.",
+        "link": "#"
+      }
+    ]
+  }
+}

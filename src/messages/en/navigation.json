@@ -1,0 +1,23 @@
+{
+  "home": "Home",
+  "about": "About Us",
+  "ourHistory": "Our History",
+  "ourWork": "Our Work",
+  "ourTeam": "Our Team",
+  "collection": "Collection",
+  "gallery": "Image Gallery",
+  "videos": "Videos",
+  "howToSupport": "How to Support",
+  "contact": "Contact",
+  "donate": "Make Your Donation",
+  "siteMap": "Site Map",
+  "privacyPolicy": "Privacy Policy",
+  "followUs": "Follow Us on Social Media",
+  "addressTitle": "Address",
+  "addressContent": "Av. Benedito Almeida Campos, corner with R. Araguaia, Centro, Uruaçu-GO",
+  "rightsReserved": "All Rights Reserved 2025 | Developed by",
+  "donateButton": {
+    "label": "I Want to Donate!",
+    "ariaLabel": "I Want to Donate"
+  }
+}

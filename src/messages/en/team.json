@@ -1,0 +1,30 @@
+{
+  "pageTitle": "Our Team",
+  "members": {
+    "raiane": {
+      "name": "Raiane Gouveia",
+      "role": "President",
+      "bio": "I lead our community with dedication and commitment, always seeking to promote the strengthening of our cultural traditions, sustainable development and improving living conditions for all residents. My work is focused on fighting for the rights of the quilombola community and seeking solutions that meet our needs, without giving up the preservation of our historical and cultural roots. As a leader, I strive to ensure a more just and equal future for all."
+    },
+    "karoline": {
+      "name": "Karoline Souza",
+      "role": "Project Coordinator",
+      "bio": "Speaker and project creator in the Quilombola community, with a degree in Linguistic Letters, a degree in Portuguese Letters and currently a Law student at the State University of Goiás. Throughout my career, I have dedicated myself to creating and implementing projects that promote education, culture and the strengthening of our community. My lectures and initiatives seek to encourage the protagonism of quilombola youth and highlight the importance of our traditions and the preservation of our history. I believe that education and knowledge exchange are essential tools for the empowerment and sustainable development of traditional communities."
+    },
+    "stefany": {
+      "name": "Sthéfany",
+      "role": "Executive Secretary",
+      "bio": "Undergraduate in Agronomy Technology, with experience in administrative areas and supporting traditional communities. I have been part of the quilombola community since September 2023, where I seek to contribute in an organized and effective way. I believe in the balance between serious work and constant evolution, both professional and personal."
+    },
+    "domingas": {
+      "name": "Domingas Quilombola",
+      "role": "Knowledge and Tradition Coordinator",
+      "bio": "I am Domingas Gouveia de Carvalho, known as Domingas Quilombola. I am a pedagogue, former councilwoman of Uruaçu (GO), former president of the João Borges Vieira Quilombola Community and currently work as coordinator of CONAQ. My trajectory is marked by the fight for housing, education and rights of quilombola communities, always with the commitment to strengthen our identity and guarantee social justice."
+    },
+    "rafael": {
+      "name": "Rafael Lopes",
+      "role": "Volunteer Developer",
+      "bio": "Web Developer and Software Engineering undergraduate, I have been exploring the universe of web development since 2021. In addition, I started in 2025 as a volunteer developer for the Quilombola Community Association, implementing digital tools that optimize processes and strengthen communication with the community. In my spare time, I dedicate myself to reading and watching movies and series, activities that stimulate my creativity and broaden my worldview."
+    }
+  }
+}
