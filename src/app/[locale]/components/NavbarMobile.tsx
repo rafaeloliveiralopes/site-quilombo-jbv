@@ -183,9 +183,9 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
         {t('contact')}
       </Link>
 
-      {/* Seletor de idiomas */}
+      {/* Seletor de idiomas - VERSÃO MOBILE com bandeiras maiores */}
       <div className="flex justify-center py-4">
-        <LanguageSelector />
+        <LanguageSelector variant="mobile" />
       </div>
 
       <Link
