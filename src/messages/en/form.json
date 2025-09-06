@@ -1,0 +1,26 @@
+{
+  "formTitle": "CONTACT FORM",
+  "fields": {
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message"
+  },
+  "submitButton": {
+    "sending": "Sending...",
+    "send": "Send"
+  },
+  "privacyModal": {
+    "title": "Privacy Notice",
+    "description": "By submitting this form, you agree that your data will only be used for contact return purposes.",
+    "cancel": "Cancel",
+    "confirm": "I Understand and Send"
+  },
+  "successModal": {
+    "title": "All set!",
+    "description": "Your message has been sent successfully. We will contact you soon.",
+    "close": "Close"
+  },
+  "errorAlert": "There was a problem sending the message. Please try again later."
+}

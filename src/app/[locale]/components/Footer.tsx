@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import React from 'react';
-import Link from 'next/link';
+import Image from 'next/image';
+import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
+import LanguageSelector from './LanguageSelector';
 
 interface NavbarDesktopProps {
   isSubMenuOpen: boolean;
@@ -143,6 +144,8 @@ const NavbarDesktop: React.FC<NavbarDesktopProps> = ({
           className="w-8 md:h-8"
         />
       </Link>
+      {/* Seletor de idiomas */}
+      <LanguageSelector />
     </div>
   );
 };

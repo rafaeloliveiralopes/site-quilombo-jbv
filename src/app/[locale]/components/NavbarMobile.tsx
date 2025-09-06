@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
+import LanguageSelector from './LanguageSelector';
 
 interface NavbarMobileProps {
   isSubMenuOpen: boolean;
@@ -181,6 +182,11 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({
       >
         {t('contact')}
       </Link>
+
+      {/* Seletor de idiomas */}
+      <div className="flex justify-center py-4">
+        <LanguageSelector />
+      </div>
 
       <Link
         href="/como-apoiar"
