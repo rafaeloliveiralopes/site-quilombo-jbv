@@ -42,3 +42,6 @@ next-env.d.ts
 
 # qoder IDE files
 .qoder/
+
+# Bloquear lockfile do npm
+package-lock.json
