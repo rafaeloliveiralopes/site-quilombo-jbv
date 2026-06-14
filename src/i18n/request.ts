@@ -14,6 +14,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
   const messages = {
     home: (await import(`@/messages/${locale}/home.json`)).default,
+    chatbot: (await import(`@/messages/${locale}/chatbot.json`)).default,
     contact: (await import(`@/messages/${locale}/contact.json`)).default,
     form: (await import(`@/messages/${locale}/form.json`)).default,
     gallery: (await import(`@/messages/${locale}/gallery.json`)).default,

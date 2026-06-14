@@ -1,0 +1,39 @@
+{
+  "title": "Atendimento guiado",
+  "buttonLabel": "Abrir atendimento guiado",
+  "closeLabel": "Fechar atendimento guiado",
+  "backToMenu": "Voltar às perguntas",
+  "welcome": "Olá! Escolha uma das opções para encontrar informações públicas sobre a Associação Quilombola Urbana João Borges Vieira.",
+  "menuLabel": "Perguntas frequentes",
+  "faq": {
+    "aboutAssociation": {
+      "question": "O que é a associação?",
+      "answer": "A Associação Quilombola Urbana João Borges Vieira atua desde 2007 em defesa de direitos, moradia, educação, cultura e dignidade para famílias quilombolas da região.",
+      "actionLabel": "Conhecer a história"
+    },
+    "activitiesPurpose": {
+      "question": "Quais são as atividades e objetivos?",
+      "answer": "A associação trabalha em frentes como suporte a famílias em vulnerabilidade, conquista de moradias dignas, preservação cultural, dança do tambor, oficinas, ações educativas e combate às desigualdades sociais.",
+      "actionLabel": "Ver nosso trabalho"
+    },
+    "howToSupport": {
+      "question": "Como posso apoiar?",
+      "answer": "Você pode conhecer as formas de apoio na página Como Apoiar, que centraliza as orientações públicas do site sobre contribuição para os projetos da comunidade.",
+      "actionLabel": "Ir para Como Apoiar"
+    },
+    "contactChannels": {
+      "question": "Quais são os canais de contato?",
+      "answer": "Os canais oficiais, endereço e horários de atendimento ficam centralizados na página de contato do site.",
+      "actionLabel": "Abrir contato"
+    },
+    "questionNotListed": {
+      "question": "Minha dúvida não está listada. O que faço?",
+      "answer": "Se a sua dúvida não aparece nas opções, use a página de contato para falar diretamente com a associação pelos canais oficiais já publicados no site.",
+      "actionLabel": "Falar pelo contato"
+    },
+    "chatbotLimitations": {
+      "question": "Este atendimento substitui o contato direto?",
+      "answer": "Não. Este atendimento é apenas um guia com respostas predefinidas sobre informações públicas do site. Ele não coleta dados, não registra conversas e não substitui o atendimento direto da associação."
+    }
+  }
+}

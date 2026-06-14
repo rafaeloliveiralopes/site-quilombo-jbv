@@ -1,0 +1,39 @@
+{
+  "title": "Atencion guiada",
+  "buttonLabel": "Abrir atencion guiada",
+  "closeLabel": "Cerrar atencion guiada",
+  "backToMenu": "Volver a las preguntas",
+  "welcome": "Hola. Elija una de las opciones para encontrar informacion publica sobre la Asociacion Quilombola Urbana Joao Borges Vieira.",
+  "menuLabel": "Preguntas frecuentes",
+  "faq": {
+    "aboutAssociation": {
+      "question": "Que es la asociacion?",
+      "answer": "La Asociacion Quilombola Urbana Joao Borges Vieira trabaja desde 2007 en defensa de derechos, vivienda, educacion, cultura y dignidad para familias quilombolas de la region.",
+      "actionLabel": "Conocer la historia"
+    },
+    "activitiesPurpose": {
+      "question": "Cuales son las actividades y objetivos?",
+      "answer": "La asociacion trabaja en frentes como apoyo a familias en situacion de vulnerabilidad, acceso a viviendas dignas, preservacion cultural, danza del tambor, talleres, acciones educativas y combate a las desigualdades sociales.",
+      "actionLabel": "Ver nuestro trabajo"
+    },
+    "howToSupport": {
+      "question": "Como puedo apoyar?",
+      "answer": "Puede conocer las formas de apoyo en la pagina Como Apoyar, que centraliza las orientaciones publicas del sitio sobre contribuciones a los proyectos de la comunidad.",
+      "actionLabel": "Ir a Como Apoyar"
+    },
+    "contactChannels": {
+      "question": "Cuales son los canales de contacto?",
+      "answer": "Los canales oficiales, la direccion y los horarios de atencion estan centralizados en la pagina de contacto del sitio.",
+      "actionLabel": "Abrir contacto"
+    },
+    "questionNotListed": {
+      "question": "Mi pregunta no esta en la lista. Que hago?",
+      "answer": "Si su pregunta no aparece en las opciones, use la pagina de contacto para hablar directamente con la asociacion por los canales oficiales ya publicados en el sitio.",
+      "actionLabel": "Usar contacto"
+    },
+    "chatbotLimitations": {
+      "question": "Esta atencion reemplaza el contacto directo?",
+      "answer": "No. Esta atencion es solo una guia con respuestas predefinidas sobre informacion publica del sitio. No recopila datos, no registra conversaciones y no reemplaza la atencion directa de la asociacion."
+    }
+  }
+}
