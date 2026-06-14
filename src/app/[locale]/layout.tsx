@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Chatbot from './components/chatbot/Chatbot';
 import { getMessages } from 'next-intl/server';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 
@@ -38,6 +39,7 @@ export default async function LocaleLayout({
           <Navbar />
           <main className="mx-auto w-full flex-1 overflow-x-hidden">{children}</main>
           <Footer />
+          <Chatbot />
         </NextIntlClientProvider>
       </body>
     </html>
