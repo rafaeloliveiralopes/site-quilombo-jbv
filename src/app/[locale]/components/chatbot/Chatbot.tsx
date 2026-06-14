@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { chatbotFaqItems, type ChatbotFaqItem } from './chatbotFaq';
 import ChatbotButton from './ChatbotButton';
 import ChatbotWindow from './ChatbotWindow';
@@ -8,10 +8,12 @@ import ChatbotWindow from './ChatbotWindow';
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<ChatbotFaqItem | null>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   const closeChatbot = () => {
     setIsOpen(false);
     setSelectedItem(null);
+    window.setTimeout(() => buttonRef.current?.focus(), 0);
   };
 
   const showMenu = () => {
@@ -30,7 +32,11 @@ export default function Chatbot() {
         />
       )}
 
-      <ChatbotButton isOpen={isOpen} onClick={() => setIsOpen((current) => !current)} />
+      <ChatbotButton
+        ref={buttonRef}
+        isOpen={isOpen}
+        onClick={() => setIsOpen((current) => !current)}
+      />
     </div>
   );
 }

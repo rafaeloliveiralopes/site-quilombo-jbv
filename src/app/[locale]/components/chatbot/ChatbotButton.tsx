@@ -1,5 +1,6 @@
 'use client';
 
+import { forwardRef, type Ref } from 'react';
 import { useTranslations } from 'next-intl';
 
 type ChatbotButtonProps = {
@@ -7,11 +8,12 @@ type ChatbotButtonProps = {
   onClick: () => void;
 };
 
-export default function ChatbotButton({ isOpen, onClick }: ChatbotButtonProps) {
+function ChatbotButton({ isOpen, onClick }: ChatbotButtonProps, ref: Ref<HTMLButtonElement>) {
   const t = useTranslations('chatbot');
 
   return (
     <button
+      ref={ref}
       type="button"
       aria-controls="guided-chatbot-window"
       aria-expanded={isOpen}
@@ -22,7 +24,9 @@ export default function ChatbotButton({ isOpen, onClick }: ChatbotButtonProps) {
       <span aria-hidden="true" className="text-lg leading-none">
         ?
       </span>
-      <span>{t('title')}</span>
+      <span className="hidden sm:inline">{t('title')}</span>
     </button>
   );
 }
+
+export default forwardRef(ChatbotButton);

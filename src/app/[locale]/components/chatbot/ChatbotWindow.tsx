@@ -2,6 +2,7 @@
 
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
+import { useEffect, useRef } from 'react';
 import type { ChatbotFaqItem } from './chatbotFaq';
 import ChatbotOptions from './ChatbotOptions';
 
@@ -21,12 +22,24 @@ export default function ChatbotWindow({
   onClose,
 }: ChatbotWindowProps) {
   const t = useTranslations('chatbot');
+  const firstOptionRef = useRef<HTMLButtonElement>(null);
+  const actionLinkRef = useRef<HTMLAnchorElement>(null);
+  const backButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (selectedItem) {
+      (actionLinkRef.current ?? backButtonRef.current)?.focus();
+      return;
+    }
+
+    firstOptionRef.current?.focus();
+  }, [selectedItem]);
 
   return (
     <aside
       id="guided-chatbot-window"
       aria-labelledby="guided-chatbot-title"
-      className="bg-snow border-dark w-[min(calc(100vw-2rem),24rem)] overflow-hidden rounded-lg border-2 shadow-xl"
+      className="bg-snow border-dark max-h-[calc(100dvh-6rem)] w-[min(calc(100vw-2rem),24rem)] overflow-y-auto rounded-lg border-2 shadow-xl"
     >
       <header className="bg-chocolate text-snow flex items-center justify-between gap-3 px-4 py-3">
         <h2 id="guided-chatbot-title" className="text-base font-bold">
@@ -46,7 +59,11 @@ export default function ChatbotWindow({
         {!selectedItem ? (
           <>
             <p className="text-dark text-sm leading-relaxed">{t('welcome')}</p>
-            <ChatbotOptions items={items} onSelectItem={onSelectItem} />
+            <ChatbotOptions
+              items={items}
+              onSelectItem={onSelectItem}
+              firstItemRef={firstOptionRef}
+            />
           </>
         ) : (
           <div className="space-y-4">
@@ -57,6 +74,7 @@ export default function ChatbotWindow({
 
             {selectedItem.action && (
               <Link
+                ref={actionLinkRef}
                 href={selectedItem.action.href}
                 className="bg-green text-dark border-dark focus-visible:ring-orange inline-flex rounded-full border px-4 py-2 text-sm font-bold transition hover:bg-green-600 focus-visible:ring-4"
               >
@@ -65,6 +83,7 @@ export default function ChatbotWindow({
             )}
 
             <button
+              ref={backButtonRef}
               type="button"
               aria-label={t('backToMenu')}
               onClick={onBack}
