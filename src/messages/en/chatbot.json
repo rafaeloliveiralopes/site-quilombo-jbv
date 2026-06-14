@@ -1,0 +1,39 @@
+{
+  "title": "Guided assistance",
+  "buttonLabel": "Open guided assistance",
+  "closeLabel": "Close guided assistance",
+  "backToMenu": "Back to questions",
+  "welcome": "Hello! Choose one of the options to find public information about the Joao Borges Vieira Urban Quilombola Association.",
+  "menuLabel": "Frequently asked questions",
+  "faq": {
+    "aboutAssociation": {
+      "question": "What is the association?",
+      "answer": "The Joao Borges Vieira Urban Quilombola Association has worked since 2007 to defend rights, housing, education, culture, and dignity for quilombola families in the region.",
+      "actionLabel": "Learn about the history"
+    },
+    "activitiesPurpose": {
+      "question": "What are the activities and goals?",
+      "answer": "The association works on areas such as support for vulnerable families, access to decent housing, cultural preservation, tambor dance, workshops, educational actions, and efforts against social inequalities.",
+      "actionLabel": "See our work"
+    },
+    "howToSupport": {
+      "question": "How can I support?",
+      "answer": "You can learn about support options on the How to Support page, which centralizes the site's public guidance about contributing to the community's projects.",
+      "actionLabel": "Go to How to Support"
+    },
+    "contactChannels": {
+      "question": "What are the contact channels?",
+      "answer": "The official channels, address, and service hours are centralized on the site's contact page.",
+      "actionLabel": "Open contact"
+    },
+    "questionNotListed": {
+      "question": "My question is not listed. What should I do?",
+      "answer": "If your question is not covered by the options, use the contact page to speak directly with the association through the official channels already published on the site.",
+      "actionLabel": "Use contact page"
+    },
+    "chatbotLimitations": {
+      "question": "Does this assistance replace direct service?",
+      "answer": "No. This assistance is only a guide with predefined answers about public information from the site. It does not collect data, does not record conversations, and does not replace direct service from the association."
+    }
+  }
+}
